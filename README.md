@@ -1,29 +1,25 @@
-# Renchise Apps website
+# Renchise Apps Website v2
 
-This package is a GitHub-Pages-friendly static site for:
+A polished static website for two independent Renchise Android apps:
+
 - Renchise VouchLink
 - Renchise VaultStudio
 
-## Folder structure
+## Structure
 
-- `assets/brand/Renchise.jpg` — shared brand logo
-- `apps/vouchlink/assets/` — VouchLink logo, intro image, and screenshots
-- `apps/vaultstudio/assets/` — VaultStudio logo, intro image, and screenshots
+- `index.html` - polished landing page
+- `support.html` - site-level support and security notes
+- `privacy.html` - site-level privacy summary
+- `apps/vouchlink/` - VouchLink pages and link placeholders
+- `apps/vaultstudio/` - VaultStudio pages and link placeholders
+- `assets/styles.css` - shared styling
 
-## Image filenames expected in each app folder
+## Editing guidance
 
-- `applogo.jpg`
-- `app_intro.jpg`
-- `screen1.jpg`
-- `screen2.jpg`
-- `screen3.jpg`
-- `screen4.jpg`
-- `screen5.jpg`
+Replace the placeholder items in each app folder:
+- closed-test Google Play link
+- production Google Play link
+- tester group / Google Group link
+- support email or support form
 
-The page layout already uses fixed image frames and object-fit handling so you can replace each file later without editing HTML.
-
-## Editing notes
-
-- Replace the placeholder support email and release links before publishing.
-- Keep the app privacy, security, and disclaimer text aligned with the final app behavior.
-- Keep the two app folders separate so future edits stay simple.
+Keep the app folders separate so future editing stays simple.

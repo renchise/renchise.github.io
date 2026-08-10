@@ -3,79 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Renchise Apps Privacy</title>
-<meta name="description" content="Website privacy page for the Renchise Apps site hub.">
-<meta name="theme-color" content="#050b16">
-<meta property="og:title" content="Renchise Apps Privacy">
-<meta property="og:description" content="Website privacy page for the Renchise Apps site hub.">
-<link rel="stylesheet" href="./assets/css/site.css">
-<link rel="icon" href="./assets/brand/Renchise.jpg">
+<title>Privacy - Renchise Apps</title>
+<meta name="description" content="Site-level privacy summary for the Renchise Apps website.">
+<link rel="stylesheet" href="assets/styles.css">
+<meta name="theme-color" content="#07111f">
 </head>
 <body>
 <div class="site-shell">
 <header class="topbar">
   <div class="container topbar-inner">
-    <a class="brand" href="./index.html" aria-label="Renchise Apps home">
-      <div class="brand-logo"><img src="./assets/brand/Renchise.jpg" alt="Renchise brand logo" data-zoomable data-label="Renchise brand logo"></div>
+    <a class="brand" href="index.html" aria-label="Renchise Apps home">
+      <div class="brand-mark">R</div>
       <div class="brand-copy">
         <strong>Renchise Apps</strong>
         <span>Independent Android apps by Renchise</span>
       </div>
     </a>
-    <nav class="nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="apps/vouchlink/index.html" >VouchLink</a><a href="apps/vaultstudio/index.html" >VaultStudio</a><a href="support.html" >Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="apps/vouchlink/index.html">VouchLink</a>
+      <a href="apps/vaultstudio/index.html">VaultStudio</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
   </div>
 </header>
 <main>
 
 <section class="page">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Site privacy</span></div>
-    <h1>Website privacy</h1>
-    <p>This page covers the static GitHub Pages website itself. App-specific privacy details live inside each app folder.</p>
-    <div class="notice">This website does not need account sign-in and does not intentionally collect personal data through its pages. If you add analytics, forms, or contact links later, update this page to match the final behavior.</div>
-    <div class="section-title" style="margin-top:20px;">
-      <div><h2>What the site does</h2><p>Simple informational pages with links to the two Android apps, their policies, and their release pages.</p></div>
-    </div>
-    <div class="grid-2">
-      <article class="panel page-card">
-        <h3>Data handling</h3>
-        <ul>
-          <li>This site can be hosted as static HTML on GitHub Pages.</li>
-          <li>No user account is required to read the pages.</li>
-          <li>No sensitive document content is stored by the website itself.</li>
-        </ul>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Privacy</span></div>
+    <h1>Site privacy summary</h1>
+    <p>This page explains the site-level privacy approach for the Renchise Apps website. App-specific privacy and security details live inside each app folder.</p>
+    <div class="grid-2" style="margin-top:18px;">
+      <article class="panel feature-card">
+        <h3>What this website does</h3>
+        <p>The site is a static presentation hub. It does not require sign-in, and it is intended to show app information, release links, and policy pages.</p>
       </article>
-      <article class="panel page-card">
-        <h3>Ad disclosure</h3>
-        <p>When the app pages mention ads, they refer to Google Mobile Ads / AdMob placements shown in the Android apps. The website pages themselves do not need ads.</p>
+      <article class="panel feature-card">
+        <h3>Advertising disclosure</h3>
+        <p>Where either app uses Google Mobile Ads or AdMob, that advertising should be disclosed in the app’s privacy page and support materials.</p>
+      </article>
+      <article class="panel feature-card">
+        <h3>Local files and exports</h3>
+        <p>When the apps store files locally, those files remain on the device unless the user exports, shares, backs up, or deletes them.</p>
+      </article>
+      <article class="panel feature-card">
+        <h3>Placeholders</h3>
+        <p>Closed-test links, production links, tester-group links, and support contacts are placeholders until you replace them with your own URLs.</p>
       </article>
     </div>
+    <div class="notice" style="margin-top:18px;">For app-specific privacy, use the pages inside <code>apps/vouchlink</code> and <code>apps/vaultstudio</code>.</div>
   </div>
 </section>
+
 
 </main>
 <footer class="footer">
   <div class="container footer-grid">
     <div>
       <strong>Renchise Apps</strong>
-      <p>Two independent Android apps, each with separate files, policies, and release links for easy maintenance.</p>
-      <small>Not affiliated with, endorsed by, or sponsored by Google, any government agency, or any other third party unless a page explicitly says so.</small>
+      <p>Independent software, presented in one simple site with separate folders for each app.</p>
+      <small>Not affiliated with, endorsed by, or sponsored by any government agency, Google, or any other third party unless explicitly stated on a page.</small>
     </div>
     <div>
       <strong>Quick links</strong>
       <div class="stack" style="margin-top:10px;">
-        <a href="./apps/vouchlink/index.html">VouchLink</a>
-        <a href="./apps/vaultstudio/index.html">VaultStudio</a>
-        <a href="./support.html">Support</a>
+        <a href="apps/vouchlink/index.html">VouchLink</a>
+        <a href="apps/vaultstudio/index.html">VaultStudio</a>
+        <a href="support.html">Support</a>
       </div>
     </div>
     <div>
-      <strong>Ads disclosure</strong>
-      <p>Where app pages mention ads, they mean Google Mobile Ads / AdMob shown by the app developer in clearly disclosed placements.</p>
+      <strong>Disclosure</strong>
+      <p>Where apps show ads, they are disclosed as Google Mobile Ads / AdMob advertising in the relevant privacy pages.</p>
     </div>
   </div>
 </footer>
 </div>
-<script src="./assets/js/site.js"></script>
 </body>
 </html>
