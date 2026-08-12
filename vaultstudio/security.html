@@ -37,18 +37,39 @@ badges:
 notice: "This page is app-specific and keeps the main support, privacy, security, disclaimer, and licence notes together for easier editing."
 ---
 
-
-<div class="panel">
-  <h3>Security page</h3>
-  <p class="muted">Security notes for photos, ID scans, and sensitive local files in VaultStudio.</p>
+<div class="panel" style="max-width:800px; margin:0 auto;">
+  <h3>Security</h3>
+  <p class="muted">How VaultStudio protects your photos and documents</p>
   <hr class="sep">
-  <p>VaultStudio is intended to work with your device’s own security settings where available. If your phone supports fingerprint, PIN, pattern, password, or a similar trusted screen-lock mechanism, you can use it to protect access to the device and any stored files.</p>
-  <p>For scanned IDs and vault items, the safest approach is to keep the device locked when not in use, avoid unnecessary sharing, and delete files that you no longer need.</p>
-  <ul class="checklist">
-    <li>Use the device’s native security features.</li>
-    <li>Share sensitive images only with trusted recipients.</li>
-    <li>Keep backups private and controlled.</li>
-    <li>Review exports before sending them onward.</li>
-  </ul>
-</div>
 
+  <h4>1. On‑device storage</h4>
+  <p>All ID scans, passport photos, and Studio projects are stored <strong>locally on your device</strong>. The app does not use cloud storage or remote servers for your content. Files are saved in the device’s internal storage or the public Pictures folder (for exports).</p>
+
+  <h4>2. Optional app lock</h4>
+  <p>On supported devices, VaultStudio integrates with Android’s biometric and screen‑lock APIs (fingerprint, PIN, pattern, or password). When enabled, the app requires authentication before opening. This adds an extra layer of protection for sensitive scans.</p>
+  <p class="note">The app lock is optional and uses your device’s existing security framework. Renchise does not have access to your biometric data or screen‑lock credentials.</p>
+
+  <h4>3. Data encryption</h4>
+  <p>The ID Vault uses Android’s <a href="https://developer.android.com/topic/security/data" target="_blank" rel="noopener">EncryptedSharedPreferences</a> and <a href="https://developer.android.com/topic/security/data" target="_blank" rel="noopener">EncryptedFile</a> APIs where applicable, ensuring that stored document metadata and thumbnails are encrypted at rest.</p>
+
+  <h4>4. Secure sharing</h4>
+  <p>When you share a file, the data is handed off to Android’s sharing system. We recommend using trusted apps and secure channels (e.g., encrypted messaging) for sensitive documents.</p>
+
+  <h4>5. Best practices for users</h4>
+  <ul>
+    <li>Keep your device’s screen lock enabled and use a strong PIN or password.</li>
+    <li>Enable the optional app lock in VaultStudio settings if you store sensitive scans.</li>
+    <li>Delete scans you no longer need from the ID Vault.</li>
+    <li>Review exports before sharing—ensure they contain only the information you intend to share.</li>
+  </ul>
+
+  <h4>6. What we do <em>not</em> do</h4>
+  <ul>
+    <li>We do not store, process, or transmit your photos or scans on any remote server.</li>
+    <li>We do not have access to your device’s screen‑lock credentials or biometric data.</li>
+    <li>We do not collect usage analytics or crash logs that could identify you.</li>
+  </ul>
+
+  <hr class="sep">
+  <p class="note"><strong>Independent app statement:</strong> VaultStudio is an independent personal app. It is not affiliated with any government, embassy, passport office, or identity authority.</p>
+</div>
