@@ -1,0 +1,20 @@
+title: "Renchise Apps"
+description: "Independent Android apps by Renchise. VaultStudio and VouchLink with app-specific privacy, security, disclaimer, and support pages."
+url: "https://renchise.github.io"
+baseurl: ""
+author: "Renchise"
+
+social:
+  name: "Renchise"
+  links:
+    - "https://github.com/renchise"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: /feed.xml
+
+markdown: kramdown

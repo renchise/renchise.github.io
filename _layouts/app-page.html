@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-card">
+    <span class="kicker">App page · {{ page.category | default: "Renchise app" }}</span>
+    <h1 class="hero-title">{{ page.app_name }} <span class="accent">• {{ page.page_title | default: page.tagline }}</span></h1>
+    <p class="lead">{{ page.tagline }}</p>
+
+    {% if page.nav_links %}
+    <div class="policy-nav" style="margin-top:20px;">
+      {% for link in page.nav_links %}
+        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="hero-actions">
+      {% if page.primary_cta_text and page.primary_cta_link %}
+        <a class="btn" href="{{ site.baseurl }}{{ page.primary_cta_link }}">{{ page.primary_cta_text }}</a>
+      {% endif %}
+      {% if page.secondary_cta_text and page.secondary_cta_link %}
+        <a class="btn-secondary" href="{{ site.baseurl }}{{ page.secondary_cta_link }}">{{ page.secondary_cta_text }}</a>
+      {% endif %}
+    </div>
+
+    {% if page.quick_facts %}
+      <div class="grid-3" style="margin-top:24px;">
+        {% for fact in page.quick_facts %}
+          <div class="stat">
+            <div class="value">{{ fact.value }}</div>
+            <div class="label">{{ fact.label }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="hero-side">
+    <div class="brand-visual">
+      <img src="{{ site.baseurl }}{{ page.feature_image }}" alt="{{ page.app_name }} feature graphic" class="zoomable" />
+    </div>
+    <div class="badge-row">
+      {% for badge in page.badges %}
+        <span class="badge{% if badge.type == 'gold' %} gold{% endif %}">{{ badge.text }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if page.notice %}
+  <div class="notice section">{{ page.notice }}</div>
+{% endif %}
+
+{% if page.screenshots %}
+<section class="section">
+  <div class="section-head">
+    <div>
+      <h2>Screenshots</h2>
+      <p>Tap any screenshot to preview it full size.</p>
+    </div>
+  </div>
+  <div class="screenshot-grid">
+    {% for item in page.screenshots %}
+      <figure class="screenshot">
+        <div class="shot">
+          <img class="zoomable" src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.caption }}" />
+        </div>
+        <figcaption>{{ item.caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  {{ content }}
+</section>

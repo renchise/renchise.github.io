@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1324" />
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/Renchise.png" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css" />
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body>
+  {% include navigation.html %}
+  <main class="page">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>Renchise</strong> · independent Android apps and support site</div>
+      <div>Ads are shown through Google AdMob on supported pages. Privacy, security, and disclaimer pages are app-specific.</div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="lightboxClose" aria-label="Close preview">×</button>
+    <img id="lightboxImg" alt="Preview" />
+  </div>
+
+  <script>
+    (function(){
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+      function closeLB(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden','true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('img.zoomable, a.zoomable img').forEach(img => {
+        img.addEventListener('click', function(){
+          lbImg.src = this.dataset.full || this.src;
+          lb.classList.add('open');
+          lb.setAttribute('aria-hidden','false');
+        });
+      });
+      lb.addEventListener('click', function(e){
+        if(e.target === lb) closeLB();
+      });
+      lbClose.addEventListener('click', closeLB);
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeLB();
+      });
+    })();
+  </script>
+</body>
+</html>
