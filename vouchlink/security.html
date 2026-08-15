@@ -2,15 +2,16 @@
 layout: app-page
 title: "Renchise VouchLink - Security"
 app_name: "Renchise VouchLink"
-page_title: "Security"
-category: "Security and device-lock notes"
-tagline: "Security and device-lock notes"
+page_title: "Security Practices"
+category: "Security and data protection"
+tagline: "AES‑256 encryption, local storage, and zero tracking."
 app_logo: "/assets/images/vouchlink/ic_launcher-playstore.png"
 feature_image: "/assets/images/vouchlink/feature.png"
 primary_cta_text: "Back to overview"
 primary_cta_link: "/vouchlink/"
 secondary_cta_text: "Support"
 secondary_cta_link: "/vouchlink/support.html"
+
 nav_links:
   - label: "Overview"
     url: "/vouchlink/"
@@ -20,35 +21,103 @@ nav_links:
     url: "/vouchlink/security.html"
   - label: "Disclaimer"
     url: "/vouchlink/disclaimer.html"
-  - label: "License"
-    url: "/vouchlink/license.html"
+  - label: "Terms of Use"
+    url: "/vouchlink/terms.html"
+  - label: "Open Source"
+    url: "/vouchlink/opensource.html"
   - label: "Support"
     url: "/vouchlink/support.html"
+
 quick_facts:
-  - value: "Policy"
-    label: "App-specific page"
-  - value: "Clear"
-    label: "Plain-language details"
+  - value: "AES‑256"
+    label: "Encryption for stored data"
+  - value: "Local only"
+    label: "No cloud sync"
+  - value: "No tracking"
+    label: "Zero analytics or crash reporting"
+  - value: "Optional SMS"
+    label: "Minimal permissions"
+
 badges:
   - text: "Independent app"
-    type: ""
+    type: "blue"
   - text: "Google AdMob"
-    type: "gold"
-notice: "This page is app-specific and keeps the main support, privacy, security, disclaimer, and licence notes together for easier editing."
+    type: "gray"
+
+notice: "This security page explains how Renchise VouchLink protects your data. All security measures are implemented locally on your device."
 ---
 
-
 <div class="panel">
-  <h3>Security page</h3>
-  <p class="muted">Security notes for saved links, reference items, and shared content.</p>
+  <h3>Security Practices</h3>
+  <p class="muted">How your data is protected in Renchise VouchLink.</p>
   <hr class="sep">
-  <p>VouchLink is designed to work as a simple organiser for your own saved items. Keep the app on a device protected by your native screen lock and only share entries with recipients you trust.</p>
-  <p>If you store referral or voucher information inside the app, treat it as personal data. Avoid exposing it publicly, and delete items you no longer need.</p>
-  <ul class="checklist">
-    <li>Use your device lock and passcode where available.</li>
-    <li>Double-check links before sending them to others.</li>
-    <li>Keep sensitive saved items private.</li>
-    <li>Remove anything that is no longer needed.</li>
-  </ul>
-</div>
 
+  <!-- ========== INDEPENDENT APP STATEMENT ========== -->
+  <div class="notice" style="background:#fef9e7; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1rem 0 1.5rem 0;">
+    <strong>⚠️ Independent App — No Affiliation</strong>
+    <div class="muted small" style="margin-top:6px;">
+      Renchise VouchLink is a <strong>personal, independent</strong> utility developed by an individual Android developer. It is <strong>not affiliated with</strong> any government agency, voucher issuer, merchant, or platform operator.
+    </div>
+  </div>
+
+  <!-- ========== DATA NEVER LEAVES YOUR DEVICE ========== -->
+  <div class="notice" style="background:#f0fdf4; border-left:4px solid #22c55e; padding:1rem 1.25rem; margin:1rem 0 1.5rem 0;">
+    <strong>🔐 Data Never Leaves Your Device</strong>
+    <div class="muted small" style="margin-top:6px;">
+      VouchLink is designed with a strict data security-first philosophy. No data is ever sent to external servers. You stay in full control.
+    </div>
+  </div>
+
+  <!-- ========== ENCRYPTION ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">Encryption</h4>
+  <p class="muted">
+    All voucher data is encrypted using <strong>AES‑256</strong> encryption before being stored locally on your device. The encryption key is derived from a passphrase using SHA‑256. Backup files are encrypted with the same industry‑standard encryption.
+  </p>
+  <p class="muted" style="margin-top:0.5rem;">
+    <em>Technical implementation:</em> AES in CBC mode with PKCS5 padding, using a static IV and a key derived from a SHA‑256 digest of the passphrase.
+  </p>
+
+  <!-- ========== LOCAL STORAGE ONLY ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">Local Storage Only</h4>
+  <p class="muted">
+    All information — voucher links, balances, expiry dates, and preferences — is stored exclusively in a local SQLite database (Room) on your device. There is <strong>no cloud synchronisation</strong>, no remote backup, and no data sharing.
+  </p>
+
+  <!-- ========== PERMISSIONS ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">Permissions</h4>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li><strong>READ_SMS</strong> (optional) — used only to find voucher links in SMS messages. Other messages are ignored. You can revoke this permission at any time.</li>
+    <li><strong>INTERNET</strong> — used to open official voucher websites and load AdMob advertisements.</li>
+  </ul>
+  <p class="muted" style="margin-top:0.5rem;">
+    No permission is used to access contacts, location, camera, or microphone.
+  </p>
+
+  <!-- ========== BACKUP SECURITY ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">Backup Security</h4>
+  <p class="muted">
+    Exported backup files are encrypted with the same AES‑256 encryption. They can only be imported back into the app. The developer does not have access to your backup data.
+  </p>
+
+  <!-- ========== NO ANALYTICS / NO TRACKING ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">No Analytics / No Tracking</h4>
+  <p class="muted">
+    The app does <strong>not</strong> include any analytics, crash reporting, or user tracking tools. Your voucher usage remains private.
+  </p>
+
+  <!-- ========== RECOMMENDATIONS ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">Recommendations</h4>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li>Use device lock (PIN / pattern / biometric) to protect your device.</li>
+    <li>Keep your Android system up to date.</li>
+    <li>Only install apps from trusted sources (Google Play Store).</li>
+    <li>If you share your device, consider exporting a backup and clearing app data before handing it over.</li>
+    <li>Double‑check links before sharing them with others.</li>
+    <li>Delete saved items you no longer need.</li>
+  </ul>
+
+  <hr class="sep" style="margin:1.5rem 0;">
+  <p class="muted small" style="text-align:right;">
+    Effective Date: 28 June 2026
+  </p>
+</div>
