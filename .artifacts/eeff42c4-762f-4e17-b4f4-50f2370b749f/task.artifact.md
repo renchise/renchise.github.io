@@ -1,0 +1,6 @@
+- [x] Update `vouchlink/index.html`
+- [x] Update `vouchlink/privacy.html`
+- [x] Update `vouchlink/security.html`
+- [x] Update `vouchlink/disclaimer.html`
+- [x] Update `vouchlink/support.html`
+- [x] Verify changes
