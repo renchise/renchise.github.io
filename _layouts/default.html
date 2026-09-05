@@ -7,11 +7,17 @@
   <meta name="theme-color" content="#0b1324" />
   <link rel="icon" href="{{ site.baseurl }}/assets/images/Renchise.png" />
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   {% seo %}
   {% feed_meta %}
 </head>
-<body>
+<body class="{% if page.url == '/' or page.url == '/index.html' %}is-home{% endif %}">
   {% include navigation.html %}
+
+  {% if page.url == '/' or page.url == '/index.html' %}
+    {% include banner.html %}
+  {% endif %}
+
   <main class="page">
     {{ content }}
   </main>
