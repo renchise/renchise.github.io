@@ -33,17 +33,6 @@ layout: default
   </div>
 
   <div class="contact-info">
-    {% if page.quick_facts %}
-      <div class="grid-3" style="margin-bottom: 24px;">
-        {% for fact in page.quick_facts %}
-          <div class="stat">
-            <div class="value">{{ fact.value }}</div>
-            <div class="label">{{ fact.label }}</div>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-
     <div class="panel">
       {{ content }}
     </div>

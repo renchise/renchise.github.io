@@ -12,9 +12,13 @@
   {% feed_meta %}
 </head>
 <body class="{% if page.url == '/' or page.url == '/index.html' %}is-home{% endif %}">
-  <div id="particles-js" style="position:fixed; width:100%; height:100%; top:0; left:0; z-index:-1; pointer-events:none;"></div>
+  <div id="particles-js" style="position:fixed; width:100%; height:100%; top:0; left:0; z-index:1; pointer-events:none;"></div>
 
   {% include navigation.html %}
+
+  {% if page.url == '/' or page.url == '/index.html' %}
+    {% include hero.html %}
+  {% endif %}
 
   <main class="page">
     {{ content }}
@@ -69,25 +73,25 @@
         particlesJS('particles-js', {
           particles: {
             number: {
-              value: isMobile ? 30 : 60,
+              value: isMobile ? 50 : 100,
               density: { enable: true, value_area: 800 }
             },
             color: { value: ["#1E90FF", "#00BFFF", "#FF4500", "#FF6347", "#FFD700"] },
             shape: { type: ["circle", "triangle"] },
             opacity: {
-              value: 0.5,
+              value: 0.6,
               random: true,
-              anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
+              anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false }
             },
             size: {
-              value: isMobile ? 2 : 3,
+              value: isMobile ? 2 : 4,
               random: true,
-              anim: { enable: true, speed: 2, size_min: 0.5, sync: false }
+              anim: { enable: true, speed: 3, size_min: 0.5, sync: false }
             },
             line_linked: { enable: false },
             move: {
               enable: true,
-              speed: isMobile ? 0.4 : 0.6,
+              speed: isMobile ? 0.8 : 1.2,
               direction: "none",
               random: true,
               straight: false,
@@ -104,8 +108,8 @@
               resize: true
             },
             modes: {
-              bubble: { distance: 100, size: 5, duration: 2, opacity: 0.8, speed: 3 },
-              push: { particles_nb: 2 }
+              bubble: { distance: 100, size: 6, duration: 2, opacity: 1, speed: 3 },
+              push: { particles_nb: 3 }
             }
           },
           retina_detect: true
