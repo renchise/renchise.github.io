@@ -25,11 +25,6 @@ layout: default
     <div class="brand-visual" style="min-height: auto; max-height: none;">
       <img src="{{ site.baseurl }}{{ page.feature_image }}" alt="{{ page.app_name }} feature graphic" class="zoomable" style="max-height: 400px; width: auto;" />
     </div>
-    <div class="badge-row" style="margin-top: 20px; justify-content: center;">
-      {% for badge in page.badges %}
-        <span class="badge{% if badge.type == 'gold' %} gold{% endif %}">{{ badge.text }}</span>
-      {% endfor %}
-    </div>
   </div>
 
   <div class="contact-info">

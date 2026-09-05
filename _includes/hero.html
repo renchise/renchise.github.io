@@ -2,7 +2,7 @@
   <div id="particles-banner"></div>
   <div class="banner-content">
     <div class="banner-actions">
-      <a class="btn" href="{{ site.baseurl }}/vaultstudio/">Explore VaultStudio</a>
+      <a class="btn-secondary" href="{{ site.baseurl }}/vaultstudio/">Explore VaultStudio</a>
       <a class="btn-secondary" href="{{ site.baseurl }}/vouchlink/">Explore VouchLink</a>
     </div>
   </div>
@@ -21,25 +21,25 @@ function initBannerParticles() {
   particlesJS('particles-banner', {
     particles: {
       number: {
-        value: isMobile ? 40 : 80,
-        density: { enable: true, value_area: 600 }
+        value: isMobile ? 60 : 120,
+        density: { enable: true, value_area: 500 }
       },
-      color: { value: ["#ffffff", "#3db7ff", "#f5c96a"] },
-      shape: { type: "circle" },
+      color: { value: ["#ffffff", "#3db7ff", "#f5c96a", "#ff4500"] },
+      shape: { type: ["circle", "triangle"] },
       opacity: {
-        value: 0.8,
+        value: 0.9,
         random: true,
-        anim: { enable: true, speed: 1, opacity_min: 0.2, sync: false }
+        anim: { enable: true, speed: 1.5, opacity_min: 0.3, sync: false }
       },
       size: {
-        value: isMobile ? 3 : 5,
+        value: isMobile ? 4 : 6,
         random: true,
-        anim: { enable: true, speed: 4, size_min: 1, sync: false }
+        anim: { enable: true, speed: 5, size_min: 1.5, sync: false }
       },
       line_linked: { enable: false },
       move: {
         enable: true,
-        speed: 1.5,
+        speed: 2.2,
         direction: "none",
         random: true,
         straight: false,
