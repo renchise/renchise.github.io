@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Renchise Apps"
-date: 2026-09-05 22:30:00 +0800
+date: 2026-09-01 22:30:00 +0800
 categories: updates
 ---
 

@@ -430,20 +430,38 @@ h3{
   border-color: rgba(61,183,255,.28);
 }
 
-.notice, .disclaimer-box {
-  padding: 22px;
+.panel-feature-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.disclaimer-box {
+  padding: 16px 20px;
   border-left: 4px solid var(--warn);
-  background: rgba(245, 201, 106, 0.1);
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 24px 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 .disclaimer-box strong {
   color: var(--warn);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
 }
-.disclaimer-box p {
-  color: #fff; /* Max contrast for the actual disclaimer text */
-  margin-top: 8px;
+.disclaimer-box p, .disclaimer-box div {
+  color: #ffffff;
+  font-size: 0.9rem;
   font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
 }
 .panel h3, .info-card h3, .policy-card h3{
   font-size:1.2rem;

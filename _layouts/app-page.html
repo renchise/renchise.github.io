@@ -20,18 +20,8 @@ layout: default
   {% endif %}
 </header>
 
-<div class="contact-grid">
-  <div class="contact-profile" style="width: 100%;">
-    <div class="brand-visual" style="min-height: auto; max-height: none;">
-      <img src="{{ site.baseurl }}{{ page.feature_image }}" alt="{{ page.app_name }} feature graphic" class="zoomable" style="max-height: 400px; width: auto;" />
-    </div>
-  </div>
-
-  <div class="contact-info">
-    <div class="panel">
-      {{ content }}
-    </div>
-  </div>
+<div class="panel">
+  {{ content }}
 </div>
 
 {% if page.screenshots %}
