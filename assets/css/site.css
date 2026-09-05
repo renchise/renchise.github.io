@@ -51,17 +51,20 @@ code{
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 .is-home .site-header {
-  background: rgba(7,17,31,0.4);
+  background: rgba(7, 17, 31, 0.55); /* Darker for better contrast */
   border-bottom-color: transparent;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Help links stand out */
 }
 .is-home .nav a {
-  color: #d1d9e6; /* Brighter for banner visibility */
+  color: #ffffff; /* Pure white for max contrast against blue/fire */
+  font-weight: 600;
 }
 .is-home .nav a:hover {
   color: #fff;
 }
 .is-home .brand-name {
-  color: var(--gold); /* Keep brand gold but maybe brighter? It's already gold. */
+  color: var(--gold);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .header-inner, .page, .footer-inner{
   max-width:var(--max);
@@ -139,16 +142,23 @@ code{
 .banner-container {
   position: relative;
   width: 100%;
-  height: 55vh;
-  min-height: 400px;
-  max-height: 700px;
-  background: #07111f url('../images/Renchise_banner.webp') center/cover no-repeat;
+  padding-top: 76px;
+  aspect-ratio: 2500 / 828;
+  background: #07111f url('../images/Renchise_banner.webp') center top / contain no-repeat;
   overflow: hidden;
-  margin-top: -76px; /* Pull under the sticky header */
+  margin-top: -76px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 40px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* Vignette Overlay for Contrast */
+.banner-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(7, 17, 31, 0.6) 0%, transparent 25%, transparent 75%, rgba(7, 17, 31, 0.6) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 #particles-js {
@@ -167,38 +177,66 @@ code{
   max-width: var(--max);
   margin: 0 auto;
   width: 100%;
-  pointer-events: none; /* Let clicks pass to particles if needed, but buttons need pointer-events auto */
+  padding: 0 40px 30px; /* Padding at bottom for buttons */
+  pointer-events: none;
 }
 
 .banner-actions {
-  margin-top: 180px; /* Push down to not cover text in the image */
   display: flex;
   gap: 16px;
   pointer-events: auto;
+  justify-content: flex-start;
+}
+
+/* Contact Page Enhancements */
+.contact-header {
+  margin-bottom: 40px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.contact-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-profile .profile-pic-small {
+  width: 150px; /* Larger passport style on contact page */
+  height: 185px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 980px) {
   .banner-container {
-    height: 45vh;
-    min-height: 350px;
-    padding: 0 20px;
-    background-position: 40% center; /* Adjust for mobile crop */
+    aspect-ratio: 16 / 9; /* More height on tablets */
+    background-size: cover; /* Still cover on mid-size for best fit */
+    padding-top: 76px;
   }
-  .banner-actions {
-    margin-top: 140px;
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-profile {
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 720px) {
   .banner-container {
-    height: 40vh;
-    min-height: 300px;
+    aspect-ratio: 4 / 3; /* More height on mobile */
     margin-top: -120px; /* Compensate for stacked mobile header */
+    padding-top: 120px;
+  }
+  .banner-content {
+    padding: 0 20px 20px;
   }
   .banner-actions {
-    margin-top: 100px;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 }
 
