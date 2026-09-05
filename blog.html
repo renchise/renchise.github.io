@@ -4,27 +4,27 @@ title: "Updates"
 permalink: /blog.html
 ---
 
-<section class="hero">
-  <div class="hero-card">
-    <span class="kicker">Updates</span>
-    <h1 class="hero-title">Renchise <span class="accent">blog</span></h1>
-    <p class="lead">Short notes about releases, privacy updates, publishing changes, and app support information.</p>
-  </div>
-  <div class="hero-side">
-    <div class="panel">
-      <h3>What will appear here</h3>
-      <ul class="checklist">
-        <li>Release notes for VaultStudio</li>
-        <li>Release notes for VouchLink</li>
-        <li>Policy updates and support notices</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<header class="contact-header">
+  <h1 class="page-title">Renchise <span class="accent">Updates</span></h1>
+</header>
 
 <section class="section">
-  <div class="notice">
-    <strong>No posts yet.</strong>
-    <div class="muted small" style="margin-top:8px;">Add files to the <code>_posts</code> folder to populate this page.</div>
+  <div class="grid-2">
+    {% for post in site.posts %}
+      <a class="app-card" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="app-top">
+          <div>
+            <span class="pill" style="margin-bottom: 8px;">{{ post.date | date: "%B %d, %Y" }}</span>
+            <h3 class="app-title">{{ post.title }}</h3>
+            <p class="app-desc">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+          </div>
+        </div>
+      </a>
+    {% else %}
+      <div class="notice">
+        <strong>No updates yet.</strong>
+        <div class="muted small" style="margin-top:8px;">Check back soon for news and release notes.</div>
+      </div>
+    {% endfor %}
   </div>
 </section>

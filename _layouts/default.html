@@ -12,11 +12,9 @@
   {% feed_meta %}
 </head>
 <body class="{% if page.url == '/' or page.url == '/index.html' %}is-home{% endif %}">
-  {% include navigation.html %}
+  <div id="particles-js" style="position:fixed; width:100%; height:100%; top:0; left:0; z-index:-1; pointer-events:none;"></div>
 
-  {% if page.url == '/' or page.url == '/index.html' %}
-    {% include banner.html %}
-  {% endif %}
+  {% include navigation.html %}
 
   <main class="page">
     {{ content }}
@@ -24,8 +22,8 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div><strong>Renchise</strong> · independent Android apps and support site</div>
-      <div>Ads are shown through Google AdMob on supported pages. Privacy, security, and disclaimer pages are app-specific.</div>
+      <div><strong>Renchise</strong> · independent Android apps</div>
+      <div>&copy; {{ site.time | date: "%Y" }} Renchise. All rights reserved.</div>
     </div>
   </footer>
 
@@ -58,6 +56,62 @@
       document.addEventListener('keydown', function(e){
         if(e.key === 'Escape') closeLB();
       });
+
+      // Global Particles Init
+      function initParticles() {
+        if (typeof particlesJS === 'undefined') {
+          setTimeout(initParticles, 100);
+          return;
+        }
+
+        const isMobile = window.innerWidth < 768;
+
+        particlesJS('particles-js', {
+          particles: {
+            number: {
+              value: isMobile ? 30 : 60,
+              density: { enable: true, value_area: 800 }
+            },
+            color: { value: ["#1E90FF", "#00BFFF", "#FF4500", "#FF6347", "#FFD700"] },
+            shape: { type: ["circle", "triangle"] },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
+            },
+            size: {
+              value: isMobile ? 2 : 3,
+              random: true,
+              anim: { enable: true, speed: 2, size_min: 0.5, sync: false }
+            },
+            line_linked: { enable: false },
+            move: {
+              enable: true,
+              speed: isMobile ? 0.4 : 0.6,
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: { enable: true, rotateX: 600, rotateY: 1200 }
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: !isMobile, mode: "bubble" },
+              onclick: { enable: true, mode: "push" },
+              resize: true
+            },
+            modes: {
+              bubble: { distance: 100, size: 5, duration: 2, opacity: 0.8, speed: 3 },
+              push: { particles_nb: 2 }
+            }
+          },
+          retina_detect: true
+        });
+      }
+      initParticles();
     })();
   </script>
 </body>
