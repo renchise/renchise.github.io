@@ -16,10 +16,6 @@
 
   {% include navigation.html %}
 
-  {% if page.url == '/' or page.url == '/index.html' %}
-    {% include hero.html %}
-  {% endif %}
-
   <main class="page">
     {{ content }}
   </main>
@@ -70,34 +66,78 @@
 
         const isMobile = window.innerWidth < 768;
 
+        // Background Particles
         particlesJS('particles-js', {
           particles: {
             number: {
-              value: isMobile ? 50 : 100,
-              density: { enable: true, value_area: 800 }
+              value: isMobile ? 40 : 80,
+              density: { enable: true, value_area: 1000 }
             },
             color: { value: ["#1E90FF", "#00BFFF", "#FF4500", "#FF6347", "#FFD700"] },
             shape: { type: ["circle", "triangle"] },
             opacity: {
-              value: 0.6,
+              value: 0.4,
               random: true,
-              anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false }
+              anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
             },
             size: {
-              value: isMobile ? 2 : 4,
+              value: isMobile ? 2 : 3,
               random: true,
-              anim: { enable: true, speed: 3, size_min: 0.5, sync: false }
+              anim: { enable: true, speed: 2, size_min: 0.5, sync: false }
             },
             line_linked: { enable: false },
             move: {
               enable: true,
-              speed: isMobile ? 0.8 : 1.2,
+              speed: 0.8,
               direction: "none",
               random: true,
               straight: false,
               out_mode: "out",
-              bounce: false,
-              attract: { enable: true, rotateX: 600, rotateY: 1200 }
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: { resize: true },
+            modes: {
+              bubble: { distance: 100, size: 5, duration: 2, opacity: 0.8, speed: 3 }
+            }
+          },
+          retina_detect: true
+        });
+
+        // Header Foreground Particles (Sparkling Stars)
+        particlesJS('particles-header', {
+          particles: {
+            number: {
+              value: isMobile ? 60 : 120,
+              density: { enable: true, value_area: 500 }
+            },
+            color: { value: ["#ffffff", "#fff4d1", "#ffcc00"] },
+            shape: {
+              type: "star",
+              stroke: { width: 0, color: "#000000" },
+              polygon: { nb_sides: 5 }
+            },
+            opacity: {
+              value: 0.9,
+              random: true,
+              anim: { enable: true, speed: 2.5, opacity_min: 0.1, sync: false } /* Fast twinkle */
+            },
+            size: {
+              value: isMobile ? 2.5 : 4,
+              random: true,
+              anim: { enable: true, speed: 5, size_min: 0.5, sync: false }
+            },
+            line_linked: { enable: false },
+            move: {
+              enable: true,
+              speed: 1.2, /* Slower, more graceful drift */
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out",
+              bounce: false
             }
           },
           interactivity: {
@@ -109,7 +149,7 @@
             },
             modes: {
               bubble: { distance: 100, size: 6, duration: 2, opacity: 1, speed: 3 },
-              push: { particles_nb: 3 }
+              push: { particles_nb: 4 }
             }
           },
           retina_detect: true

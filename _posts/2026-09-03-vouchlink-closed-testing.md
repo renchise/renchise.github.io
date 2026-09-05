@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VouchLink: Join Our Closed Testing Program"
-date: 2026-09-07 10:00:00 +0800
+date: 2026-09-03 10:00:00 +0800
 categories: updates
 ---
 
