@@ -66,54 +66,50 @@ code{
   position: relative;
   z-index: 3;
   width: 100%;
+  height: 100%; /* Fill the tall header */
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 16px 8px;
+  padding: 12px 16px 8px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column; /* Stack logo top, nav bottom */
   justify-content: space-between;
-  gap: 12px;
+  align-items: flex-start;
 }
-.brand-mark{
-  width:32px; height:32px;
-  border-radius:8px;
-  object-fit:cover;
-  border:1px solid rgba(255,255,255,.15);
-  box-shadow:0 6px 15px rgba(0,0,0,.35);
-  background:#101827;
+.brand-top-left {
+  align-self: flex-start;
 }
-.brand-name{
-  font-weight:900; letter-spacing:.3px;
-  color:var(--gold);
-  font-size:0.86rem;
-}
-.brand-sub{
-  color:var(--muted); font-size:0.7rem;
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Nav links on right */
+  gap: 8px;
 }
 .nav a, .nav .nav-btn{
   text-decoration:none;
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.9);
   padding: 5px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1;
-  background: rgba(7, 17, 31, 0.5);
+  background: rgba(7, 17, 31, 0.6);
+  transition: all 0.2s ease;
+}
+.nav a:hover {
+  background: rgba(61, 183, 255, 0.3);
+  border-color: rgba(61, 183, 255, 0.5);
+  transform: translateY(-1px);
 }
 @media (max-width: 720px) {
   .site-header {
-    aspect-ratio: 16 / 7;
-    min-height: 120px;
-  }
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
+    aspect-ratio: 16 / 10;
+    min-height: 140px;
   }
   .nav {
     justify-content: center;
+    flex-wrap: wrap;
     gap: 4px;
   }
 }
@@ -123,11 +119,11 @@ code{
   min-width:0;
 }
 .brand-mark{
-  width:36px; height:36px;
+  width:42px; height:42px; /* Slightly larger logo in corner */
   border-radius:10px;
   object-fit:cover;
-  border:1px solid rgba(255,255,255,.15);
-  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 6px 15px rgba(0,0,0,.5);
   background:#101827;
 }
 .brand-text{

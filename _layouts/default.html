@@ -66,19 +66,23 @@
 
         const isMobile = window.innerWidth < 768;
 
-        // Background Particles
+        // Background Particles (Sparkling Stars)
         particlesJS('particles-js', {
           particles: {
             number: {
-              value: isMobile ? 40 : 80,
+              value: isMobile ? 30 : 60,
               density: { enable: true, value_area: 1000 }
             },
-            color: { value: ["#1E90FF", "#00BFFF", "#FF4500", "#FF6347", "#FFD700"] },
-            shape: { type: ["circle", "triangle"] },
+            color: { value: ["#ffffff", "#fff4d1", "#ffcc00"] },
+            shape: {
+              type: "star",
+              stroke: { width: 0, color: "#000000" },
+              polygon: { nb_sides: 5 }
+            },
             opacity: {
-              value: 0.4,
+              value: 0.5,
               random: true,
-              anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
+              anim: { enable: true, speed: 1.5, opacity_min: 0.1, sync: false } /* Gentle twinkle */
             },
             size: {
               value: isMobile ? 2 : 3,
@@ -88,7 +92,7 @@
             line_linked: { enable: false },
             move: {
               enable: true,
-              speed: 0.8,
+              speed: 0.6,
               direction: "none",
               random: true,
               straight: false,
