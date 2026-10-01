@@ -2,6 +2,7 @@ title: "Renchise"
 description: "Renchise: Independent Android apps by Renchise, including VaultStudio and VouchLink."
 url: "https://renchise.github.io"
 baseurl: ""
+favicon_ico: "/assets/images/Renchise.png"
 author: "Renchise"
 
 social:
