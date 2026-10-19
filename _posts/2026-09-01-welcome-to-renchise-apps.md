@@ -5,7 +5,7 @@ date: 2026-09-01 22:30:00 +0800
 categories: updates
 ---
 
-We are excited to launch the official Renchise Apps website! This site will serve as the hub for all our Android applications, including **VaultStudio** and **VouchLink**.
+We are excited to launch the official Renchise Apps website! This site will serve as the hub for all our Android applications, including **VaultStudio** and **Kaki**.
 
 Here you can find:
 - **Direct Testing Links:** Join our closed testing programs directly from the support page.

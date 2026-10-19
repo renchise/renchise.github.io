@@ -5,10 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69f1e9da-5d39-4ca6-ba1a-46c41af595d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2026-09-01-welcome-to-renchise-apps.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2026-09-01-welcome-to-renchise-apps.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Kaki_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Kaki_logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_1a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_1a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_2a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_2a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_3a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_3a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_4a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_4a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/Screenshot_5a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/Screenshot_5a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vouchlink/feature.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kaki/feature.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/disclaimer.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/disclaimer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vouchlink/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/kaki/support.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "implementationPlan.dismissed.59f858b8-35fc-4b7d-8425-9a15e90e0850": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="69f1e9da-5d39-4ca6-ba1a-46c41af595d9" name="Changes" comment="" />

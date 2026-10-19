@@ -5,26 +5,26 @@ app_name: "Renchise Kaki"
 page_title: "Privacy Policy"
 category: "Privacy and data handling"
 tagline: "Your privacy is important – all data stays on your device."
-app_logo: "/assets/images/vouchlink/Kaki_logo.jpg"
-feature_image: "/assets/images/vouchlink/feature.png"
+app_logo: "/assets/images/kaki/Kaki_logo.jpg"
+feature_image: "/assets/images/kaki/feature.png"
 primary_cta_text: "Back to overview"
-primary_cta_link: "/vouchlink/"
+primary_cta_link: "/kaki/"
 secondary_cta_text: "Support"
-secondary_cta_link: "/vouchlink/support.html"
+secondary_cta_link: "/kaki/support.html"
 
 nav_links:
   - label: "Overview"
-    url: "/vouchlink/"
+    url: "/kaki/"
   - label: "Privacy"
-    url: "/vouchlink/privacy.html"
+    url: "/kaki/privacy.html"
   - label: "Security"
-    url: "/vouchlink/security.html"
+    url: "/kaki/security.html"
   - label: "Disclaimer"
-    url: "/vouchlink/disclaimer.html"
+    url: "/kaki/disclaimer.html"
   - label: "License"
-    url: "/vouchlink/license.html"
+    url: "/kaki/license.html"
   - label: "Support"
-    url: "/vouchlink/support.html"
+    url: "/kaki/support.html"
 
 quick_facts:
   - value: "No account"
@@ -47,7 +47,7 @@ notice: "This privacy policy is app‑specific and explains how Renchise Kaki ha
 
 <div class="panel">
   <h3>Privacy Policy</h3>
-  <p class="muted">Last updated: 2 September 2026</p>
+  <p class="muted">Last updated: October 2026 (Version 1.11)</p>
   <hr class="sep">
 
 <div class="disclaimer-box">
@@ -66,21 +66,22 @@ notice: "This privacy policy is app‑specific and explains how Renchise Kaki ha
   <p class="muted">No account or registration is required to use Renchise Kaki. The application does <strong>NOT</strong>:</p>
   <ul class="checklist" style="margin-left:1.25rem;">
     <li>Create user accounts or require registration</li>
+    <li>Collect bank account, credit card, or payment details</li>
     <li>Sell personal information</li>
-    <li>Upload voucher information to our servers</li>
-    <li>Share your voucher data with third parties (except when explicitly initiated by the user)</li>
+    <li>Upload voucher, expense, or bill split data to our servers</li>
+    <li>Share your data with third parties (except when explicitly initiated by the user, e.g., sharing a bill split summary or family QR payload)</li>
   </ul>
 
   <!-- ========== INFORMATION STORED LOCALLY ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">📦 Information Stored Locally</h4>
-  <p class="muted">The following information may be stored on your device:</p>
+  <p class="muted">All app data is stored strictly on your device in a local encrypted database (Room SQLite):</p>
   <ul class="checklist" style="margin-left:1.25rem;">
-    <li>Voucher links</li>
-    <li>Voucher balances</li>
-    <li>Voucher names</li>
-    <li>Expiry dates</li>
-    <li>Postal code (where applicable)</li>
-    <li>Application preferences</li>
+    <li>Saved links and voucher links</li>
+    <li>Voucher balances, names, and expiry dates</li>
+    <li>Quick Expense records (amount in SGD, date, type, description)</li>
+    <li>Bill Split records (participant names, item assignments, bill photos, payment statuses)</li>
+    <li>Family Code settings</li>
+    <li>Application preferences and reminder configurations</li>
   </ul>
 
   <!-- ========== SMS IMPORT ========== -->
@@ -89,7 +90,7 @@ notice: "This privacy policy is app‑specific and explains how Renchise Kaki ha
     <code>READ_SMS</code> permission is <strong>optional</strong> and is only required when using the Batch Import from SMS feature. SMS import is user-initiated. When selected, Renchise Kaki checks messages within a look-back period (default 365 days) for links matching the configured voucher URL prefix (default <code>https://voucher.redeem.gov.sg</code>).
   </p>
   <p class="muted" style="margin-top:0.5rem;">
-    Matching links are used to add or update voucher entries. Other messages are ignored. You can revoke this permission at any time.
+    Matching links are used to add or update voucher entries. Other messages are ignored. You can revoke this permission at any time in Android system settings.
   </p>
 
   <!-- ========== INTERNET ACCESS ========== -->
@@ -97,7 +98,7 @@ notice: "This privacy policy is app‑specific and explains how Renchise Kaki ha
   <p class="muted">Internet access is used for:</p>
   <ul class="checklist" style="margin-left:1.25rem;">
     <li>Opening official voucher websites (e.g. https://redeem.gov.sg/)</li>
-    <li>Refreshing voucher information</li>
+    <li>Refreshing voucher information on demand</li>
     <li>Loading web content from official websites</li>
     <li>Displaying advertisements (where applicable)</li>
   </ul>
@@ -108,39 +109,36 @@ notice: "This privacy policy is app‑specific and explains how Renchise Kaki ha
     The app uses <strong>Google AdMob</strong> for advertising. Google AdMob may process certain device, advertising, and related information in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
   </p>
   <p class="muted" style="margin-top:0.5rem;">
-    Renchise Kaki may provide complimentary ad-removal codes to selected testers or users at the developer's discretion. These codes are provided free of charge and are not for sale.
+    Renchise Kaki may provide complimentary ad-removal codes to selected testers or users at the developer's discretion. These codes are provided free of charge and are never sold.
   </p>
 
   <!-- ========== ANALYTICS ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">📊 Analytics</h4>
   <p class="muted">
-    The application itself does <strong>not</strong> collect analytics about your voucher usage. No crash reporting tools are integrated.
+    The application itself does <strong>not</strong> collect analytics about your voucher, expense, or bill split usage. No crash reporting tools are integrated.
   </p>
 
   <!-- ========== PRIVATE VOUCHER LINKS & SHARING ========== -->
-  <h4 style="margin:1.5rem 0 0.25rem 0;">🔗 Private Voucher Links & Sharing</h4>
+  <h4 style="margin:1.5rem 0 0.25rem 0;">🔗 Private Voucher Links &amp; Sharing</h4>
   <p class="muted">
-    Voucher links are personal, user-specific redemption links. Users should keep these private. Sharing is entirely user-initiated and should only be done with intended recipients (e.g., family members).
-  </p>
-  <p class="muted" style="margin-top:0.5rem;">
-    All data is stored locally. Voucher links and information are <strong>not uploaded to or stored on Renchise servers or any cloud storage service</strong>. The developer has no access to your locally stored data.
+    Voucher links are personal redemption links. Users should keep these private. Sharing (e.g., via Family Code QR code or messaging) is entirely user-initiated and should only be done with trusted recipients.
   </p>
 
   <!-- ========== CLOUD STORAGE ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">☁ Cloud Storage</h4>
   <p class="muted">
-    Voucher data has no cloud synchronisation or cloud storage. Your information remains stored on your own device unless you choose to export a backup.
+    All features (Vouchers, Quick Expenses, Bill Split, Link Organizer) operate with zero cloud synchronisation or cloud storage. Your data remains on your own device.
   </p>
 
   <!-- ========== DELETE YOUR DATA ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">🗑 Delete Your Data</h4>
   <p class="muted">
-    All locally stored information can be removed via:<br />
+    All locally stored information can be removed at any time via:<br />
     <strong>Android Settings → Apps → Renchise Kaki → Storage &amp; Cache → Clear Storage</strong>
   </p>
 
   <hr class="sep" style="margin:1.5rem 0;">
   <p class="muted small" style="text-align:right;">
-    Effective Date: 2 September 2026
+    Effective Date: October 2026 (Version 1.11)
   </p>
 </div>
