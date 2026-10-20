@@ -1,29 +1,10 @@
 ---
 layout: app-page
+app_key: vaultstudio
 title: "Renchise VaultStudio - Support"
-app_name: "Renchise VaultStudio"
 page_title: "Support"
 category: "Contact and tester links"
-tagline: "Contact and tester links"
-app_logo: "/assets/images/vaultstudio/VaultStudio.webp"
-feature_image: "/assets/images/vaultstudio/feature.png"
-primary_cta_text: "Back to overview"
-primary_cta_link: "/vaultstudio/"
-secondary_cta_text: "Support"
-secondary_cta_link: "/vaultstudio/support.html"
-nav_links:
-  - label: "Overview"
-    url: "/vaultstudio/"
-  - label: "Privacy"
-    url: "/vaultstudio/privacy.html"
-  - label: "Security"
-    url: "/vaultstudio/security.html"
-  - label: "Disclaimer"
-    url: "/vaultstudio/disclaimer.html"
-  - label: "License"
-    url: "/vaultstudio/license.html"
-  - label: "Support"
-    url: "/vaultstudio/support.html"
+
 quick_facts:
   - value: "Policy"
     label: "App-specific page"
@@ -37,26 +18,27 @@ badges:
 notice: "This page contains the Support for VaultStudio."
 ---
 
-<div class="panel" >
+<div class="panel">
   <h3>Support</h3>
   <p class="muted">Get help, report issues, or join the testing programme</p>
   <hr class="sep">
 
+  {% include app_disclaimer.html %}
+
   <h4>Contact</h4>
   <p><strong>Email:</strong> <a href="mailto:renchise.dev@gmail.com">renchise.dev@gmail.com</a></p>
-  <p>This app is maintained by an independent developer on personal time. Response times may vary, but we will do our best to reply as soon as possible. Please include a clear description of the issue, your device model, and Android version.</p>
+  <p class="muted">This app is maintained by an independent developer on personal time. Response times may vary, but we will do our best to reply as soon as possible. Please include a clear description of the issue, your device model, and Android version.</p>
 
-  <h4>Testing programme</h4>
+  <h4>Testing programme &amp; Releases</h4>
   <div class="kv">
+    <div class="key">Production link</div>
+    <div class="val"><a href="https://play.google.com/store/apps/details?id=com.renchise.passportphoto" target="_blank" rel="noopener">Available on Google Play Store (Live since Oct 2026)</a></div>
     <div class="key">Internal test link</div>
     <div class="val"><a href="https://play.google.com/apps/internaltest/4701423883219551691" rel="nofollow">VaultStudio internal test link</a></div>
-    <div class="key">Production link</div>
-    <div class="val"><a href="#" rel="nofollow">Add your production link here</a></div>
     <div class="key">Tester group</div>
     <div class="val"><a href="https://groups.google.com/g/renchise_closed_testers" target="_blank" rel="noopener">renchise_closed_testers@googlegroups.com</a></div>
   </div>
   <p class="note">Join the tester group to participate in pre‑release testing. You will receive early access to new features and can provide feedback directly.</p>
-  <p class="note">Replace the placeholder links above with your live store or testing URLs before publishing.</p>
 
   <hr class="sep">
 
@@ -82,11 +64,4 @@ notice: "This page contains the Support for VaultStudio."
 
   <p><strong>Does the app work offline?</strong><br>
   Yes, the core passport photo processing, ID Vault, and Studio tools work entirely offline. Internet access is only required for displaying ads via AdMob and for in‑app purchases (if applicable).</p>
-
-  <hr class="sep">
-  <div class="disclaimer-box">
-    <strong>Independent app statement:</strong>
-    <p>VaultStudio is an independent personal app. It is not affiliated with any government, embassy, passport office, or identity authority.</p>
-  </div>
 </div>
-

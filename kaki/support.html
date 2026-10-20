@@ -1,30 +1,9 @@
 ---
 layout: app-page
+app_key: kaki
 title: "Renchise Kaki - Support"
-app_name: "Renchise Kaki"
 page_title: "Support"
 category: "Contact and tester links"
-tagline: "Get help, report issues, or share feedback."
-app_logo: "/assets/images/kaki/Kaki_logo.jpg"
-feature_image: "/assets/images/kaki/feature.png"
-primary_cta_text: "Back to overview"
-primary_cta_link: "/kaki/"
-secondary_cta_text: "Support"
-secondary_cta_link: "/kaki/support.html"
-
-nav_links:
-  - label: "Overview"
-    url: "/kaki/"
-  - label: "Privacy"
-    url: "/kaki/privacy.html"
-  - label: "Security"
-    url: "/kaki/security.html"
-  - label: "Disclaimer"
-    url: "/kaki/disclaimer.html"
-  - label: "License"
-    url: "/kaki/license.html"
-  - label: "Support"
-    url: "/kaki/support.html"
 
 quick_facts:
   - value: "📧 Email"
@@ -50,12 +29,7 @@ notice: "This page contains contact details, testing links, and guidance for rep
   <p class="muted">Get help, report issues, or share feedback.</p>
   <hr class="sep">
 
-<div class="disclaimer-box">
-  <strong>⚠️ IMPORTANT DISCLAIMER</strong>
-  <p>
-    Renchise Kaki is <strong>not affiliated with, endorsed by, authorized by, sponsored by, or operated by</strong> the Singapore Government, GovTech Singapore, CDC, the Climate Vouchers programme, RedeemSG, or any government agency or voucher issuer.
-  </p>
-</div>
+  {% include app_disclaimer.html %}
 
   <p class="muted">
     Thank you for using Renchise Kaki. This app is independently developed during personal free time. Support is provided on a voluntary, best‑effort basis and response times may vary depending on availability.
@@ -88,20 +62,13 @@ notice: "This page contains contact details, testing links, and guidance for rep
     Feature requests and improvement ideas are always welcome. Please send them via email with the subject <strong>"Suggestion"</strong>.
   </p>
 
-  <!-- ========== COMMUNITY SUPPORT ========== -->
-  <h4 style="margin:1.5rem 0 0.25rem 0;">🤝 Community Support</h4>
-  <p class="muted">
-    For general questions and discussions, you can visit the
-    <a href="https://sites.google.com/view/renchise/home" target="_blank" rel="noopener">Renchise Support Site</a>.
-  </p>
-
   <!-- ========== TESTING & PUBLISHING LINKS ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">📱 Testing &amp; Publishing</h4>
   <div class="kv" style="margin:0.5rem 0;">
     <div class="key">Internal test</div>
     <div class="val"><a href="https://play.google.com/apps/internaltest/4701014088258247732" rel="nofollow">Renchise Kaki internal test link</a></div>
     <div class="key">Production</div>
-    <div class="val"><a href="#" rel="nofollow">Add production link here</a></div>
+    <div class="val"><a href="https://play.google.com/store/apps/details?id=com.renchise.sgvoucher" target="_blank" rel="noopener">Launching soon on Google Play Store</a></div>
     <div class="key">Tester group</div>
     <div class="val"><a href="https://groups.google.com/g/renchise_closed_testers" target="_blank" rel="noopener">renchise_closed_testers@googlegroups.com</a></div>
   </div>

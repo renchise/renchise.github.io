@@ -1,0 +1,10 @@
+{% assign app_info = site.data.apps[include.app_key | default: page.app_key] %}
+{% if app_info and app_info.disclaimer %}
+<div class="disclaimer-box">
+  <strong>⚠️ IMPORTANT DISCLAIMER</strong>
+  <p>{{ app_info.disclaimer }}</p>
+  {% if app_info.disclaimer_subtext %}
+  <p style="margin-top:6px; font-size: 0.85rem; opacity: 0.9;">{{ app_info.disclaimer_subtext }}</p>
+  {% endif %}
+</div>
+{% endif %}

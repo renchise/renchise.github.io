@@ -1,29 +1,10 @@
 ---
 layout: app-page
+app_key: vaultstudio
 title: "Renchise VaultStudio - Security"
-app_name: "Renchise VaultStudio"
 page_title: "Security"
 category: "Security and device-lock notes"
-tagline: "Security and device-lock notes"
-app_logo: "/assets/images/vaultstudio/VaultStudio.webp"
-feature_image: "/assets/images/vaultstudio/feature.png"
-primary_cta_text: "Back to overview"
-primary_cta_link: "/vaultstudio/"
-secondary_cta_text: "Support"
-secondary_cta_link: "/vaultstudio/support.html"
-nav_links:
-  - label: "Overview"
-    url: "/vaultstudio/"
-  - label: "Privacy"
-    url: "/vaultstudio/privacy.html"
-  - label: "Security"
-    url: "/vaultstudio/security.html"
-  - label: "Disclaimer"
-    url: "/vaultstudio/disclaimer.html"
-  - label: "License"
-    url: "/vaultstudio/license.html"
-  - label: "Support"
-    url: "/vaultstudio/support.html"
+
 quick_facts:
   - value: "Policy"
     label: "App-specific page"
@@ -34,13 +15,15 @@ badges:
     type: ""
   - text: "Google AdMob"
     type: "gold"
-notice: "This page contains the Security for VaultStudio."
+notice: "This page contains the Security details for VaultStudio."
 ---
 
-<div class="panel" >
+<div class="panel">
   <h3>Security</h3>
   <p class="muted">How VaultStudio protects your photos and documents</p>
   <hr class="sep">
+
+  {% include app_disclaimer.html %}
 
   <h4>1. On‑device storage</h4>
   <p>All ID scans, passport photos, and Studio projects are stored <strong>locally on your device</strong>. The app does not use cloud storage or remote servers for your content. Files are saved in the device’s internal storage or the public Pictures folder (for exports).</p>
@@ -69,10 +52,4 @@ notice: "This page contains the Security for VaultStudio."
     <li>We do not have access to your device’s screen‑lock credentials or biometric data.</li>
     <li>We do not collect usage analytics or crash logs that could identify you.</li>
   </ul>
-
-  <hr class="sep">
-  <div class="disclaimer-box">
-    <strong>Independent app statement:</strong>
-    <p>VaultStudio is an independent personal app. It is not affiliated with any government, embassy, passport office, or identity authority.</p>
-  </div>
 </div>

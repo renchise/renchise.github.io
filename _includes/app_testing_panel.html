@@ -1,0 +1,31 @@
+{% assign app_info = site.data.apps[include.app_key | default: page.app_key] %}
+{% if app_info %}
+<div class="panel">
+  <h3>Publishing and testing</h3>
+  <div class="kv">
+    {% if app_info.production_status %}
+    <div class="key">Production</div>
+    <div class="val">
+      {% if app_info.production_link %}
+      <a href="{{ app_info.production_link }}" target="_blank" rel="noopener">{{ app_info.production_status }}</a>
+      {% else %}
+      <span class="muted small">{{ app_info.production_status }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if app_info.internal_test_link %}
+    <div class="key">Internal test</div>
+    <div class="val"><a href="{{ app_info.internal_test_link }}" rel="nofollow">{{ app_info.name }} internal test link</a></div>
+    {% endif %}
+    {% if app_info.tester_group_link %}
+    <div class="key">Tester group</div>
+    <div class="val"><a href="{{ app_info.tester_group_link }}" target="_blank" rel="noopener">{{ app_info.tester_group_email }}</a></div>
+    {% endif %}
+    {% if app_info.contact_email %}
+    <div class="key">Contact</div>
+    <div class="val"><a href="mailto:{{ app_info.contact_email }}">{{ app_info.contact_email }}</a></div>
+    {% endif %}
+  </div>
+  <hr class="sep">
+</div>
+{% endif %}

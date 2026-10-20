@@ -1,27 +1,10 @@
 ---
 layout: app-page
-title: "VaultStudio - AI Passport Photo & ID scanner | Secure Local Storage  | Renchise"
-description: "Generate compliant passport photos for international travel, capture and store IDs securely offline. Edit photos, and log in with phone authentication. All data stays private on your device."
-app_name: "Renchise VaultStudio"
+app_key: vaultstudio
+title: "VaultStudio - AI Passport Photo & ID scanner | Secure Local Storage | Renchise"
+description: "Generate compliant passport photos for international travel, capture and store IDs securely offline. All data stays private on your device."
 page_title: "Photo, ID, and Studio tools"
-category: "Passport & ID"
-tagline: "Passport photos · ID Vault · Studio. Private and on‑device."
-app_logo: "/assets/images/vaultstudio/VaultStudio.webp"
-feature_image: "/assets/images/vaultstudio/feature.png"
 
-nav_links:
-  - label: "Overview"
-    url: "/vaultstudio/"
-  - label: "Privacy"
-    url: "/vaultstudio/privacy.html"
-  - label: "Security"
-    url: "/vaultstudio/security.html"
-  - label: "Disclaimer"
-    url: "/vaultstudio/disclaimer.html"
-  - label: "License"
-    url: "/vaultstudio/license.html"
-  - label: "Support"
-    url: "/vaultstudio/support.html"
 screenshots:
   - image: "/assets/images/vaultstudio/Screenshot_1.png"
     caption: "Passport photo workflow"
@@ -36,70 +19,52 @@ screenshots:
 
 notice: "VaultStudio supports a conservative passport workflow, but the website content keeps the independent-app and third-party disclaimer visible on every relevant page."
 ---
-<main class="page">
 
- 
+<div class="grid-2">
+  <div class="panel">
+    <img src="{{ site.baseurl }}/assets/images/vaultstudio/feature.png" alt="Renchise VaultStudio feature image" class="panel-feature-img">
+    <h3>About VaultStudio</h3>
+    <p class="muted">
+      Renchise VaultStudio combines three independent tools in one app:
+    </p>
+    <ul class="checklist">
+      <li><strong>Passport Photo</strong> – Automatic framing, background replacement, and compliance checks for over 50 country formats. Results are guidance only; final acceptance depends on the receiving authority.</li>
+      <li><strong>ID Vault</strong> – Private, on‑device storage for front/back scans of identity documents. All data stays on your phone unless you choose to export or share.</li>
+      <li><strong>Studio</strong> – Background removal, canvas resizing, text overlays, and creative editing—independent of the passport workflow.</li>
+      <li><strong>Device lock</strong> – Optional screen‑lock integration (fingerprint/PIN/pattern) to restrict app access on supported devices.</li>
+    </ul>
+    <p class="muted" style="margin-top:12px;">
+      VaultStudio is designed as a practical personal utility, <strong>not</strong> as an official government, immigration, or identity platform.
+    </p>
+  </div>
 
-  <section class="section">
-    <div class="grid-2">
-      <div class="panel">
-        <img src="{{ site.baseurl }}{{ page.feature_image }}" alt="{{ page.app_name }} feature image" class="panel-feature-img">
-        <h3>About VaultStudio</h3>
-        <p class="muted">
-          Renchise VaultStudio combines three independent tools in one app:
-        </p>
-        <ul class="checklist">
-          <li><strong>Passport Photo</strong> – Automatic framing, background replacement, and compliance checks for over 50 country formats. Results are guidance only; final acceptance depends on the receiving authority.</li>
-          <li><strong>ID Vault</strong> – Private, on‑device storage for front/back scans of identity documents. All data stays on your phone unless you choose to export or share.</li>
-          <li><strong>Studio</strong> – Background removal, canvas resizing, text overlays, and creative editing—independent of the passport workflow.</li>
-          <li><strong>Device lock</strong> – Optional screen‑lock integration (fingerprint/PIN/pattern) to restrict app access on supported devices.</li>
-        </ul>
-        <p class="muted" style="margin-top:12px;">
-          VaultStudio is designed as a practical personal utility, <strong>not</strong> as an official government, immigration, or identity platform.
-        </p>
-      </div>
+  {% include app_testing_panel.html %}
+</div>
 
-      <div class="panel">
-        <h3>Publishing and testing</h3>
-        <div class="kv">
-          <div class="key">Internal test</div><div class="val"><a href="https://play.google.com/apps/internaltest/4701423883219551691" rel="nofollow">VaultStudio internal test link</a></div>
-          <div class="key">Production</div><div class="val"><a href="#" rel="nofollow">Add your production link here</a></div>
-          <div class="key">Tester group</div>
-          <div class="val"><a href="https://groups.google.com/g/renchise_closed_testers" target="_blank" rel="noopener">renchise_closed_testers@googlegroups.com</a></div>
-           <div class="key">Contact</div>
-           <div class="val"><a href="mailto:renchise.dev@gmail.com">renchise.dev@gmail.com</a></div>
-        </div>
-        <hr class="sep">
-      
-      </div>
-    </div>
+{% include app_disclaimer.html %}
 
-    <div class="section-head" style="margin-top:26px;">
-      <div>
-        <h2>Policy summaries</h2>
-        <p>Short, visible notes are shown here; the full pages have the complete wording for publishing.</p>
-      </div>
-    </div>
+<div class="section-head" style="margin-top:26px;">
+  <div>
+    <h2>Policy summaries</h2>
+    <p>Short, visible notes are shown here; the full pages have the complete wording for publishing.</p>
+  </div>
+</div>
 
-    <div class="grid-4">
-      <a class="policy-card" href="/vaultstudio/privacy.html" style="text-decoration:none;">
-        <h3>Privacy</h3>
-        <p class="muted small">VaultStudio processes all photos and scans on‑device. No image data is sent to Renchise servers. Ads via Google AdMob may use advertising identifiers as governed by Google’s policies.</p>
-      </a>
-      <a class="policy-card" href="/vaultstudio/security.html" style="text-decoration:none;">
-        <h3>Security</h3>
-        <p class="muted small">Use your device’s native screen lock to protect the app. Sensitive scans remain local—share only when you intend to send a copy outside the app.</p>
-      </a>
-      <a class="policy-card" href="/vaultstudio/disclaimer.html" style="text-decoration:none;">
-        <h3>Disclaimer</h3>
-        <p class="muted small">Renchise VaultStudio is an independent, personally developed app. It is not affiliated with, endorsed by, or acting on behalf of any government, embassy, or passport authority.</p>
-      </a>
-      <a class="policy-card" href="/vaultstudio/license.html" style="text-decoration:none;">
-        <h3>License</h3>
-        <p class="muted small">Third‑party components, services, and logos remain subject to their own licences, terms, and trademarks.</p>
-      </a>
-    </div>
-
-
-  </section>
-</main>
+<div class="grid-4">
+  <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/privacy.html" style="text-decoration:none;">
+    <h3>🔐 Privacy</h3>
+    <p class="muted small">VaultStudio processes all photos and scans on‑device. No image data is sent to Renchise servers. Ads via Google AdMob may use advertising identifiers as governed by Google’s policies.</p>
+  </a>
+  <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/security.html" style="text-decoration:none;">
+    <h3>🛡️ Security</h3>
+    <p class="muted small">Use your device’s native screen lock to protect the app. Sensitive scans remain local—share only when you intend to send a copy outside the app.</p>
+  </a>
+  <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/disclaimer.html" style="text-decoration:none;">
+    <h3>⚠️ Disclaimer</h3>
+    <p class="muted small">Renchise VaultStudio is an independent, personally developed app. It is not affiliated with, endorsed by, or acting on behalf of any government, embassy, or passport authority.</p>
+  </a>
+  <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/license.html" style="text-decoration:none;">
+    <h3>📄 License</h3>
+    <p class="muted small">Third‑party components, services, and logos remain subject to their own licences, terms, and trademarks.</p>
+  </a>
+</div>

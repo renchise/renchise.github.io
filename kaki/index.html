@@ -1,27 +1,9 @@
 ---
 layout: app-page
+app_key: kaki
 title: "Renchise Kaki – SG Vouchers, Expense Tracker & Bill Split | Local & Private | Renchise"
 description: "Renchise Kaki is an independent all-in-one utility for Singapore residents to manage CDC and Climate Vouchers, track local SGD expenses, split group bills, share vouchers via Family Code, and organize website links."
-app_name: "Renchise Kaki"
 page_title: "Vouchers, Expense Tracker, Bill Split & Link Organizer"
-category: "Utilities & productivity"
-tagline: "A private personal utility for SG CDC & Climate Vouchers, daily SGD expense tracking, group bill splitting, and everyday bookmarks."
-app_logo: "/assets/images/kaki/Kaki_logo.jpg"
-feature_image: "/assets/images/kaki/feature.png"
-
-nav_links:
-  - label: "Overview"
-    url: "/kaki/"
-  - label: "Privacy"
-    url: "/kaki/privacy.html"
-  - label: "Security"
-    url: "/kaki/security.html"
-  - label: "Disclaimer"
-    url: "/kaki/disclaimer.html"
-  - label: "License"
-    url: "/kaki/license.html"
-  - label: "Support"
-    url: "/kaki/support.html"
 
 screenshots:
   - image: "/assets/images/kaki/Screenshot_1.jpg"
@@ -38,7 +20,7 @@ screenshots:
 
 <div class="grid-2">
   <div class="panel">
-    <img src="{{ site.baseurl }}{{ page.feature_image }}" alt="{{ page.app_name }} feature image" class="panel-feature-img">
+    <img src="{{ site.baseurl }}/assets/images/kaki/feature.png" alt="Renchise Kaki feature image" class="panel-feature-img">
     <h3>About Renchise Kaki</h3>
     <p class="muted">
       <strong>Renchise Kaki</strong> is an independent app for Singapore residents. It helps you manage CDC and Climate Vouchers, track daily expenses, split dining bills, and organise website links — all in one private place.
@@ -81,24 +63,10 @@ screenshots:
     </ul>
   </div>
 
-  <div class="panel">
-    <h3>Publishing and testing</h3>
-    <div class="kv">
-      <div class="key">Internal test</div><div class="val"><a href="https://play.google.com/apps/internaltest/4701014088258247732" rel="nofollow">Renchise Kaki internal test link</a></div>
-      <div class="key">Production</div><div class="val"><a href="#" rel="nofollow">Add your production link here</a></div>
-      <div class="key">Tester group</div><div class="val"><a href="https://groups.google.com/g/renchise_closed_testers" target="_blank" rel="noopener">renchise_closed_testers@googlegroups.com</a></div>
-      <div class="key">Contact</div><div class="val"><a href="mailto:renchise.dev@gmail.com">renchise.dev@gmail.com</a></div>
-    </div>
-    <hr class="sep">
-  </div>
+  {% include app_testing_panel.html %}
 </div>
 
-<div class="disclaimer-box">
-  <strong>⚠️ IMPORTANT DISCLAIMER</strong>
-  <p>
-    Renchise Kaki is <strong>not affiliated with, endorsed by, authorized by, sponsored by, or operated by</strong> the Singapore Government, GovTech Singapore, CDC, the Climate Vouchers programme, RedeemSG, or any government agency or voucher issuer.
-  </p>
-</div>
+{% include app_disclaimer.html %}
 
 <!-- ========== Policy Summaries ========== -->
 <div class="section-head" style="margin-top:26px;">
@@ -109,19 +77,19 @@ screenshots:
 </div>
 
 <div class="grid-4">
-  <a class="policy-card" href="/kaki/privacy.html" style="text-decoration:none;">
+  <a class="policy-card" href="{{ site.baseurl }}/kaki/privacy.html" style="text-decoration:none;">
     <h3>🔐 Privacy</h3>
     <p class="muted small">No account required. No cloud sync. All data (vouchers, expenses, bill splits, Family Code) stays on your device. SMS permission is optional. AdMob may process device info per Google's policy.</p>
   </a>
-  <a class="policy-card" href="/kaki/security.html" style="text-decoration:none;">
+  <a class="policy-card" href="{{ site.baseurl }}/kaki/security.html" style="text-decoration:none;">
     <h3>🛡️ Security</h3>
     <p class="muted small">On-device encryption for stored data. Zero cloud servers. Expiring 120s QR code for Family Code sharing. Government vouchers excluded from CSV backups.</p>
   </a>
-  <a class="policy-card" href="/kaki/disclaimer.html" style="text-decoration:none;">
+  <a class="policy-card" href="{{ site.baseurl }}/kaki/disclaimer.html" style="text-decoration:none;">
     <h3>⚠️ Disclaimer</h3>
     <p class="muted small"><strong>Independent app.</strong> Not affiliated with any government agency or voucher issuer. Provided "as is". No liability for misuse or data loss.</p>
   </a>
-  <a class="policy-card" href="/kaki/license.html" style="text-decoration:none;">
+  <a class="policy-card" href="{{ site.baseurl }}/kaki/license.html" style="text-decoration:none;">
     <h3>📄 License</h3>
     <p class="muted small">By using this app you agree to the terms. Built with Jetpack Compose, Room, and other open‑source libraries. Full license attributions provided.</p>
   </a>

@@ -1,30 +1,9 @@
 ---
 layout: app-page
-title: "Renchise Kaki - Security"
-app_name: "Renchise Kaki"
+app_key: kaki
+title: "Renchise Kaki - Security Practices"
 page_title: "Security Practices"
 category: "Security and data protection"
-tagline: "AES‑256 encryption, local storage, and zero tracking."
-app_logo: "/assets/images/kaki/Kaki_logo.jpg"
-feature_image: "/assets/images/kaki/feature.png"
-primary_cta_text: "Back to overview"
-primary_cta_link: "/kaki/"
-secondary_cta_text: "Support"
-secondary_cta_link: "/kaki/support.html"
-
-nav_links:
-  - label: "Overview"
-    url: "/kaki/"
-  - label: "Privacy"
-    url: "/kaki/privacy.html"
-  - label: "Security"
-    url: "/kaki/security.html"
-  - label: "Disclaimer"
-    url: "/kaki/disclaimer.html"
-  - label: "License"
-    url: "/kaki/license.html"
-  - label: "Support"
-    url: "/kaki/support.html"
 
 quick_facts:
   - value: "AES‑256"
@@ -50,16 +29,11 @@ notice: "This security page explains how Renchise Kaki protects your data. All s
   <p class="muted">How your data is protected in Renchise Kaki (Version 1.11).</p>
   <hr class="sep">
 
-<div class="disclaimer-box">
-  <strong>⚠️ IMPORTANT DISCLAIMER</strong>
-  <p>
-    Renchise Kaki is <strong>not affiliated with, endorsed by, authorized by, sponsored by, or operated by</strong> the Singapore Government, GovTech Singapore, CDC, the Climate Vouchers programme, RedeemSG, or any government agency or voucher issuer.
-  </p>
-</div>
+  {% include app_disclaimer.html %}
 
   <!-- ========== DATA STORAGE & PROCESSING ========== -->
-  <div class="notice" style="background:#f0fdf4; border-left:4px solid #22c55e; padding:1rem 1.25rem; margin:1rem 0 1.5rem 0;">
-    <strong>🔐 Local Storage & Private Processing</strong>
+  <div class="notice" style="background:rgba(34, 197, 94, 0.1); border-left:4px solid #22c55e; padding:1rem 1.25rem; margin:1rem 0 1.5rem 0;">
+    <strong>🔐 Local Storage &amp; Private Processing</strong>
     <div class="muted small" style="margin-top:6px;">
       All Renchise Kaki data (Vouchers, Quick Expenses, Bill Split records, and Family Code) is processed and stored locally on your device. Information is <strong>not uploaded to or stored on Renchise servers</strong>.
     </div>

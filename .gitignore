@@ -1,0 +1,22 @@
+# Android Studio / IntelliJ IDE files
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/caches/
+.idea/planningMode.xml
+
+# Local Jekyll & static site build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Node / Vendor dependencies (if added in future)
+node_modules/
+vendor/
+
+# OS & temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log

@@ -1,0 +1,18 @@
+{% assign app_info = site.data.apps[include.app_key | default: page.app_key] %}
+{% if app_info and app_info.nav_links %}
+<nav class="policy-nav" aria-label="{{ app_info.name }} navigation">
+  {% for link in app_info.nav_links %}
+    {% assign link_path = link.url %}
+    {% assign current_path = page.url %}
+    {% assign active_class = "" %}
+    {% if current_path == link_path %}
+      {% assign active_class = " active" %}
+    {% elsif link_path == "/kaki/" and current_path == "/kaki/index.html" %}
+      {% assign active_class = " active" %}
+    {% elsif link_path == "/vaultstudio/" and current_path == "/vaultstudio/index.html" %}
+      {% assign active_class = " active" %}
+    {% endif %}
+    <a href="{{ site.baseurl }}{{ link.url }}" class="nav-tab{{ active_class }}">{{ link.label }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
