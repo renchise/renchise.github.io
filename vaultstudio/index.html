@@ -20,51 +20,132 @@ screenshots:
 notice: "VaultStudio supports a conservative passport workflow, but the website content keeps the independent-app and third-party disclaimer visible on every relevant page."
 ---
 
-<div class="grid-2">
+<!-- ========== Hero Section ========== -->
+<div class="panel hero-card" style="margin-bottom: 24px;">
+  <div class="grid-2" style="align-items: center; gap: 24px;">
+    <div>
+      <span class="badge gold" style="margin-bottom: 12px; display: inline-flex;">
+        <span style="font-weight: 700;">Live on Google Play Store</span>
+      </span>
+      <h2 style="font-size: 1.8rem; margin-bottom: 12px;">AI Passport Photo, ID Vault &amp; Creative Studio</h2>
+      <p class="muted" style="margin-bottom: 16px;">
+        <strong>Renchise VaultStudio</strong> combines automated passport photo compliance checks for 50+ countries, encrypted on-device ID storage, and creative photo studio tools in one private app.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.renchise.passportphoto" target="_blank" rel="noopener">
+          Get it on Google Play
+        </a>
+        <a class="btn-secondary" href="#features">
+          Explore Features
+        </a>
+      </div>
+      <div class="badge-row">
+        <span class="pill">📷 50+ Passport Formats</span>
+        <span class="pill">🔐 Offline ID Vault</span>
+        <span class="pill">🎨 Studio Tools</span>
+        <span class="pill">🛡️ App Lock Support</span>
+      </div>
+    </div>
+    <div>
+      <img src="{{ site.baseurl }}/assets/images/vaultstudio/feature.png" alt="Renchise VaultStudio feature graphic" class="panel-feature-img" style="margin-bottom: 0;">
+    </div>
+  </div>
+</div>
+
+<!-- ========== Feature Breakdown ========== -->
+<div id="features" class="section-head" style="margin-top: 32px;">
+  <div>
+    <h2>Core Features &amp; Tools</h2>
+    <p>Powerful tools for passport compliance, secure offline ID storage, and creative studio editing.</p>
+  </div>
+</div>
+
+<div class="grid-2" style="margin-bottom: 28px;">
   <div class="panel">
-    <img src="{{ site.baseurl }}/assets/images/vaultstudio/feature.png" alt="Renchise VaultStudio feature image" class="panel-feature-img">
-    <h3>About VaultStudio</h3>
-    <p class="muted">
-      Renchise VaultStudio combines three independent tools in one app:
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      📷 Passport Photo Studio
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Automated framing and compliance checks for international travel documents.
     </p>
     <ul class="checklist">
-      <li><strong>Passport Photo</strong> – Automatic framing, background replacement, and compliance checks for over 50 country formats. Results are guidance only; final acceptance depends on the receiving authority.</li>
-      <li><strong>ID Vault</strong> – Private, on‑device storage for front/back scans of identity documents. All data stays on your phone unless you choose to export or share.</li>
-      <li><strong>Studio</strong> – Background removal, canvas resizing, text overlays, and creative editing—independent of the passport workflow.</li>
-      <li><strong>Device lock</strong> – Optional screen‑lock integration (fingerprint/PIN/pattern) to restrict app access on supported devices.</li>
+      <li>🌐 <strong>50+ Country Standards</strong> – Pre-configured templates for passports, visas, and ID cards worldwide</li>
+      <li>✨ <strong>Auto Background Replacement</strong> – Clean background cutout and replacement with standard white/light grey</li>
+      <li>📏 <strong>Precision Framing &amp; Crop</strong> – Automatic head sizing and eye alignment guidance</li>
+      <li>⚠️ <strong>Guidance &amp; Compliance Checks</strong> – Automated checks for lighting, face orientation, and shadow detection</li>
     </ul>
-    <p class="muted" style="margin-top:12px;">
-      VaultStudio is designed as a practical personal utility, <strong>not</strong> as an official government, immigration, or identity platform.
-    </p>
   </div>
 
-  {% include app_testing_panel.html %}
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🔐 Encrypted ID Vault
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Private, offline storage for sensitive identity documents.
+    </p>
+    <ul class="checklist">
+      <li>📇 <strong>Front &amp; Back Scans</strong> – Store structured front/back captures of driver's licenses, IDs, and membership cards</li>
+      <li>🔒 <strong>100% Offline Storage</strong> – All scans remain strictly on your device; zero cloud upload</li>
+      <li>📁 <strong>Organized Document Gallery</strong> – Quick search, categorization, and easy local viewing</li>
+      <li>📤 <strong>User-Controlled Export</strong> – Share or print documents only when explicitly initiated by you</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🎨 Studio Editing Tools
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Versatile creative photo editing independent of passport requirements.
+    </p>
+    <ul class="checklist">
+      <li>✂️ <strong>Background Removal</strong> – Cut out subjects from photo backgrounds with 1 tap</li>
+      <li>📐 <strong>Canvas Resizing &amp; Crop</strong> – Custom aspect ratios and dimensions for digital or print use</li>
+      <li>✍️ <strong>Text Overlays &amp; Watermarks</strong> – Add custom labels, notes, or privacy watermarks</li>
+      <li>🎛️ <strong>Fine Color Adjustments</strong> – Tweak brightness, contrast, and tone for crisp exports</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🛡️ Device Lock &amp; Security
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Native security protections for sensitive app content.
+    </p>
+    <ul class="checklist">
+      <li>👆 <strong>Biometric / PIN App Lock</strong> – Protect app access using your device's native lock screen (Fingerprint, PIN, Pattern)</li>
+      <li>🚫 <strong>Zero Cloud Analytics on Scans</strong> – Document scans and photos are never processed by external servers</li>
+      <li>📱 <strong>On-Device AI Models</strong> – Background removal and face alignment run locally on your phone</li>
+    </ul>
+  </div>
 </div>
 
 {% include app_disclaimer.html %}
 
-<div class="section-head" style="margin-top:26px;">
+<!-- ========== Policy Summaries ========== -->
+<div class="section-head" style="margin-top: 32px;">
   <div>
-    <h2>Policy summaries</h2>
-    <p>Short, visible notes are shown here; the full pages have the complete wording for publishing.</p>
+    <h2>Policy Summaries</h2>
+    <p>Short, visible notes are shown here; full pages contain complete legal wording.</p>
   </div>
 </div>
 
 <div class="grid-4">
   <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/privacy.html" style="text-decoration:none;">
     <h3>🔐 Privacy</h3>
-    <p class="muted small">VaultStudio processes all photos and scans on‑device. No image data is sent to Renchise servers. Ads via Google AdMob may use advertising identifiers as governed by Google’s policies.</p>
+    <p class="muted small">VaultStudio processes all photos and scans on-device. No image data is sent to Renchise servers. AdMob may process device identifiers per Google policies.</p>
   </a>
   <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/security.html" style="text-decoration:none;">
     <h3>🛡️ Security</h3>
-    <p class="muted small">Use your device’s native screen lock to protect the app. Sensitive scans remain local—share only when you intend to send a copy outside the app.</p>
+    <p class="muted small">Use native screen lock to protect the app. Sensitive scans remain local — share only when you intend to send a copy outside the app.</p>
   </a>
   <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/disclaimer.html" style="text-decoration:none;">
     <h3>⚠️ Disclaimer</h3>
-    <p class="muted small">Renchise VaultStudio is an independent, personally developed app. It is not affiliated with, endorsed by, or acting on behalf of any government, embassy, or passport authority.</p>
+    <p class="muted small">Renchise VaultStudio is an independent app. It is not affiliated with, endorsed by, or acting on behalf of any government, embassy, or passport authority.</p>
   </a>
   <a class="policy-card" href="{{ site.baseurl }}/vaultstudio/license.html" style="text-decoration:none;">
     <h3>📄 License</h3>
-    <p class="muted small">Third‑party components, services, and logos remain subject to their own licences, terms, and trademarks.</p>
+    <p class="muted small">Third-party components, services, and logos remain subject to their own licenses, terms, and trademarks.</p>
   </a>
 </div>

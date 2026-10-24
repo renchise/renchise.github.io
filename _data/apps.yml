@@ -6,7 +6,7 @@ kaki:
   feature_image: "/assets/images/kaki/feature.png"
   disclaimer: "Renchise Kaki is an independent app and is not affiliated with, endorsed by, authorized by, sponsored by, or operated by the Singapore Government, GovTech Singapore, CDC, the Climate Vouchers programme, RedeemSG, or any government agency or voucher issuer."
   disclaimer_subtext: "Renchise Kaki does not issue government vouchers or replace official government services. Always refer to the applicable official government website and voucher service for current and final information."
-  production_status: "Launching soon on Google Play Store"
+  production_status: "Available on Google Play Store (Live since Oct 2026)"
   production_link: "https://play.google.com/store/apps/details?id=com.renchise.sgvoucher"
   internal_test_link: "https://play.google.com/apps/internaltest/4701014088258247732"
   android_store_link: "https://play.google.com/store/apps/details?id=com.renchise.sgvoucher"

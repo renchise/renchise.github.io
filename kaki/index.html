@@ -18,68 +18,123 @@ screenshots:
     caption: "About & policies"
 ---
 
-<div class="grid-2">
+<!-- ========== Hero Section ========== -->
+<div class="panel hero-card" style="margin-bottom: 24px;">
+  <div class="grid-2" style="align-items: center; gap: 24px;">
+    <div>
+      <span class="badge gold" style="margin-bottom: 12px; display: inline-flex;">
+        <span style="font-weight: 700;">Live on Google Play Store</span>
+      </span>
+      <h2 style="font-size: 1.8rem; margin-bottom: 12px;">All-in-One Personal Utility for Singapore</h2>
+      <p class="muted" style="margin-bottom: 16px;">
+        <strong>Renchise Kaki</strong> helps you manage CDC and Climate Vouchers, track daily local expenses in SGD, split group dining bills, and organize web links — all in one private, on-device app.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.renchise.sgvoucher" target="_blank" rel="noopener">
+          Get it on Google Play
+        </a>
+        <a class="btn-secondary" href="#features">
+          Explore Features
+        </a>
+      </div>
+      <div class="badge-row">
+        <span class="pill">🔒 100% On-Device</span>
+        <span class="pill">🇸🇬 SG Vouchers</span>
+        <span class="pill">☕ SGD Expenses</span>
+        <span class="pill">🧾 Bill Split (Up to 50 pax)</span>
+      </div>
+    </div>
+    <div>
+      <img src="{{ site.baseurl }}/assets/images/kaki/feature.png" alt="Renchise Kaki feature graphic" class="panel-feature-img" style="margin-bottom: 0;">
+    </div>
+  </div>
+</div>
+
+<!-- ========== Feature Breakdown ========== -->
+<div id="features" class="section-head" style="margin-top: 32px;">
+  <div>
+    <h2>Core Features &amp; Capabilities</h2>
+    <p>Everything you need for everyday voucher management, spending tracking, and group expense splitting.</p>
+  </div>
+</div>
+
+<div class="grid-2" style="margin-bottom: 28px;">
   <div class="panel">
-    <img src="{{ site.baseurl }}/assets/images/kaki/feature.png" alt="Renchise Kaki feature image" class="panel-feature-img">
-    <h3>About Renchise Kaki</h3>
-    <p class="muted">
-      <strong>Renchise Kaki</strong> is an independent app for Singapore residents. It helps you manage CDC and Climate Vouchers, track daily expenses, split dining bills, and organise website links — all in one private place.
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🎟️ Vouchers &amp; Link Organizer
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Organize official Singapore CDC &amp; Climate vouchers alongside your general web links.
     </p>
-    <p class="muted">
-      The app is <strong>not affiliated with, endorsed by, authorized by, sponsored by, or operated by</strong> the Singapore Government, GovTech Singapore, CDC, the Climate Vouchers programme, RedeemSG, or any government agency or voucher issuer.
-    </p>
-
-    <h4 style="margin-top:1.5rem;">🎟️ Vouchers &amp; Links</h4>
     <ul class="checklist">
-      <li>📩 <strong>Auto-Import from SMS</strong> – scan inbox for official RedeemSG voucher links (<code>https://voucher.redeem.gov.sg</code>) with auto-de-duplication</li>
-      <li>➕ <strong>Manual &amp; CSV/HTML Import</strong> – add manually or batch-import bookmark files with preview</li>
-      <li>🛒 <strong>CDC &amp; Climate Tabs</strong> – Heartland, Supermarket, and NEA Climate Vouchers organized separately</li>
-      <li>🔄 <strong>1-Tap Balance Refresh</strong> – update single voucher balances on demand or bulk-refresh via SMS scan</li>
-      <li>🔒 <strong>Private Redemption Links</strong> – keep voucher links private; sharing is strictly user-initiated</li>
-    </ul>
-
-    <h4 style="margin-top:1.5rem;">☕ Quick Expenses (Local SGD)</h4>
-    <ul class="checklist">
-      <li>➕ <strong>Log Spending</strong> – record amount in SGD, date, category type, and description</li>
-      <li>📅 <strong>Date Filters &amp; Charts</strong> – filter by Today, Week, Month, or Year with daily/weekly/monthly trend charts</li>
-      <li>🏷️ <strong>Custom Categories</strong> – add, rename, or soft-archive custom expense types</li>
-      <li>🔐 <strong>100% On-Device</strong> – no bank details or account logins required; zero cloud tracking</li>
-    </ul>
-
-    <h4 style="margin-top:1.5rem;">🧾 Bill Split (Group Meals &amp; Expenses)</h4>
-    <ul class="checklist">
-      <li>👥 <strong>Up to 50 People</strong> – manage dining and group outing bills with friends and family</li>
-      <li>🔀 <strong>3 Split Modes</strong> – Equal, Individual (specific items), and Custom (own items + shared treats)</li>
-      <li>📷 <strong>Bill Photo Capture</strong> – snap physical receipt photos with auto-crop framing</li>
-      <li>🔍 <strong>Flexible Assignment</strong> – assign items to Everyone or "Everyone except X"</li>
-      <li>📤 <strong>Itemised Sharing</strong> – share totals and attached bill photos via WhatsApp, Email, or messaging</li>
-      <li>💾 <strong>Local History &amp; Payment Status</strong> – track who has paid with built-in checkboxes</li>
-    </ul>
-
-    <h4 style="margin-top:1.5rem;">🔑 Family Code &amp; 📁 CSV Backup</h4>
-    <ul class="checklist">
-      <li>🔑 <strong>Family Voucher Sharing</strong> – share CDC and Climate vouchers using a private Family Code via 120-second expiring QR codes or text payload</li>
-      <li>📁 <strong>General Link CSV Backup</strong> – export, import, or share general web link CSV backups (government CDC/Climate vouchers strictly excluded for security)</li>
+      <li>📩 <strong>Auto-Import from SMS</strong> – Scan inbox for official RedeemSG voucher links (<code>https://voucher.redeem.gov.sg</code>) with automatic deduplication</li>
+      <li>🛒 <strong>CDC &amp; Climate Tabs</strong> – Separate tabs for Heartland, Supermarket, and NEA Climate Vouchers</li>
+      <li>🔄 <strong>1-Tap Balance Refresh</strong> – Update individual voucher balances on demand or bulk-refresh via SMS scan</li>
+      <li>➕ <strong>Manual &amp; CSV Import</strong> – Easily add links manually or batch-import bookmark files</li>
+      <li>🔒 <strong>Private Redemption Links</strong> – Voucher links remain local; sharing is strictly user-initiated</li>
     </ul>
   </div>
 
-  {% include app_testing_panel.html %}
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      ☕ Quick Expense Tracker (Local SGD)
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Fast, zero-friction daily expense logging designed for SGD spending.
+    </p>
+    <ul class="checklist">
+      <li>➕ <strong>Log Daily Spending</strong> – Record amount in SGD, date, category, and description in seconds</li>
+      <li>📅 <strong>Date Filters &amp; Charts</strong> – View daily/weekly/monthly trends with filter presets (Today, Week, Month, Year)</li>
+      <li>🏷️ <strong>Custom Categories</strong> – Add, rename, or soft-archive custom expense types to match your routine</li>
+      <li>🔐 <strong>100% On-Device Privacy</strong> – Zero bank credentials, no account login, and zero cloud tracking</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🧾 Group Bill Split
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Seamless group meal and outing bill splitting with friends and family.
+    </p>
+    <ul class="checklist">
+      <li>👥 <strong>Up to 50 People</strong> – Manage large group dining and trip expenses with ease</li>
+      <li>🔀 <strong>3 Split Modes</strong> – Equal, Individual (per item), and Custom (own items + shared treats)</li>
+      <li>📷 <strong>Bill Photo Capture</strong> – Snap receipt photos with auto-crop framing</li>
+      <li>📤 <strong>Itemised Sharing</strong> – Share totals and attached bill photos via WhatsApp, Email, or messaging</li>
+      <li>💾 <strong>Local Payment Tracking</strong> – Mark who has paid with built-in checkboxes</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3 style="display: flex; align-items: center; gap: 8px;">
+      🔑 Family Code &amp; 📁 CSV Backup
+    </h3>
+    <p class="muted small" style="margin-bottom: 12px;">
+      Secure family sharing and data export features.
+    </p>
+    <ul class="checklist">
+      <li>🔑 <strong>Family Voucher Sharing</strong> – Share CDC &amp; Climate vouchers with family using a private Family Code via 120-second expiring QR code</li>
+      <li>📁 <strong>General Link CSV Backup</strong> – Export, import, or share general web link CSV backups</li>
+      <li>🛡️ <strong>Voucher Security Rule</strong> – Official government CDC/Climate vouchers are strictly excluded from CSV exports for your protection</li>
+    </ul>
+  </div>
 </div>
 
 {% include app_disclaimer.html %}
 
 <!-- ========== Policy Summaries ========== -->
-<div class="section-head" style="margin-top:26px;">
+<div class="section-head" style="margin-top: 32px;">
   <div>
-    <h2>Policies &amp; legal</h2>
-    <p>Each policy has a visible summary here and a dedicated page for the full wording.</p>
+    <h2>Policies &amp; Legal</h2>
+    <p>Each policy has a visible summary here and a dedicated page for full wording.</p>
   </div>
 </div>
 
 <div class="grid-4">
   <a class="policy-card" href="{{ site.baseurl }}/kaki/privacy.html" style="text-decoration:none;">
     <h3>🔐 Privacy</h3>
-    <p class="muted small">No account required. No cloud sync. All data (vouchers, expenses, bill splits, Family Code) stays on your device. SMS permission is optional. AdMob may process device info per Google's policy.</p>
+    <p class="muted small">No account required. No cloud sync. All data stays on your device. SMS permission is optional. AdMob may process device info per Google's policy.</p>
   </a>
   <a class="policy-card" href="{{ site.baseurl }}/kaki/security.html" style="text-decoration:none;">
     <h3>🛡️ Security</h3>
@@ -91,6 +146,6 @@ screenshots:
   </a>
   <a class="policy-card" href="{{ site.baseurl }}/kaki/license.html" style="text-decoration:none;">
     <h3>📄 License</h3>
-    <p class="muted small">By using this app you agree to the terms. Built with Jetpack Compose, Room, and other open‑source libraries. Full license attributions provided.</p>
+    <p class="muted small">By using this app you agree to the terms. Built with Jetpack Compose, Room, and open-source libraries. Full license attributions provided.</p>
   </a>
 </div>
