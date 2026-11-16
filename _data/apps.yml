@@ -59,13 +59,13 @@ vaultstudio:
       url: "/vaultstudio/support.html"
 
 jigsawquest:
-  name: "Renchise Jigsaw Quest"
+  name: "Renchise Journey Jigsaw"
   category: "Casual & Puzzle"
   tagline: "Journey to the West Jigsaw Legend. Custom photo puzzles, 81 Ordeals codex & 100% on-device privacy."
   logo: "/assets/images/jigsawquest/logo.png"
   feature_image: "/assets/images/jigsawquest/feature.webp"
-  disclaimer: "Renchise Jigsaw Quest is an independent, personally developed mobile game. It is an original creative work inspired by classical Journey to the West mythology, and is not affiliated with, endorsed by, or sponsored by any external game studio, publisher, or media corporation."
-  disclaimer_subtext: "Jigsaw Quest operates strictly on-device without cloud account synchronization. All custom photo uploads, puzzle progress, and achievement data remain local to your device."
+  disclaimer: "Renchise Journey Jigsaw is an independent, personally developed mobile game. It is an original creative work inspired by classical Journey to the West mythology, and is not affiliated with, endorsed by, or sponsored by any external game studio, publisher, or media corporation."
+  disclaimer_subtext: "Renchise Journey Jigsaw operates strictly on-device without cloud account synchronization. All custom photo uploads, puzzle progress, and achievement data remain local to your device."
   production_status: "Available on Google Play Store (Live since Nov 2026)"
   production_link: "https://play.google.com/store/apps/details?id=com.renchise.puzzle"
   internal_test_link: "https://play.google.com/apps/internaltest/4701014088258247732"
