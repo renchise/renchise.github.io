@@ -1,0 +1,117 @@
+---
+layout: app-page
+app_key: jigsawquest
+title: "Renchise Jigsaw Quest - Privacy Policy"
+page_title: "Privacy Policy"
+category: "Privacy and data handling"
+
+quick_facts:
+  - value: "No account"
+    label: "No registration needed"
+  - value: "Local only"
+    label: "Photos & data stay on device"
+  - value: "No cloud upload"
+    label: "Zero remote image storage"
+  - value: "AdMob"
+    label: "Google may collect device info"
+
+badges:
+  - text: "Independent app"
+    type: "blue"
+  - text: "Google AdMob"
+    type: "gray"
+
+notice: "This privacy policy is app‑specific and explains how Renchise Jigsaw Quest handles your information. It forms part of the legal framework for the app."
+---
+
+<div class="panel">
+  <h3>Privacy Policy</h3>
+  <p class="muted">Last updated: November 2026 (Version 1.0)</p>
+  <hr class="sep">
+
+  {% include app_disclaimer.html %}
+
+  <p class="muted">
+    Your privacy is important to us. <strong>Renchise Jigsaw Quest</strong> (Package: <code>com.renchise.puzzle</code>) is an independent application designed with a privacy‑first approach. All core gameplay features, level progress, custom photo cropping, and companion codex data are processed and stored locally on your device.
+  </p>
+
+  <!-- ========== PERSONAL INFORMATION ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">🔒 Personal Information &amp; Data Collection</h4>
+  <p class="muted">No account, registration, or login is required to use Renchise Jigsaw Quest. The application does <strong>NOT</strong>:</p>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li>Create user accounts or request email address, name, or phone number</li>
+    <li>Collect bank account, credit card, or financial details (all in-game coins are purely virtual)</li>
+    <li>Track your GPS, fine location, or coarse location</li>
+    <li>Sell, rent, or trade your personal information</li>
+    <li>Upload your custom photos or jigsaw puzzle progress to external servers</li>
+  </ul>
+
+  <!-- ========== INFORMATION STORED LOCALLY ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">📦 Information Stored Locally</h4>
+  <p class="muted">All game data is stored strictly on your device in a local SQLite database (Android Room) and private app storage:</p>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li>Level progress, stars earned, and best completion times per rank</li>
+    <li>Unlocked achievements (72 unique achievements)</li>
+    <li>Player profile nickname, avatar selection, and active companion character ID</li>
+    <li>Saved puzzle state (board slots, tray pieces, rotations) for auto-resuming unfinished games</li>
+    <li>Daily login streak count and last claim date</li>
+    <li>Custom photo library items (cropped bitmaps saved in private app storage: <code>filesDir/saved_photos</code>)</li>
+    <li>Application preferences (music/SFX volume, haptics, active board theme, contrast setting, font scale, language)</li>
+  </ul>
+
+  <!-- ========== CUSTOM PHOTO PRIVACY ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">🖼️ Custom Photo Privacy</h4>
+  <p class="muted">
+    When you use the <strong>Add &amp; Edit New Photo</strong> feature, you select an image from your device via the standard Android photo picker. The selected photo is rotated, scaled, and cropped into a 4:3 ratio strictly on-device using local Android graphic APIs.
+  </p>
+  <p class="muted" style="margin-top:0.5rem;">
+    Your custom photos are saved exclusively to your device's local app storage. They are <strong>never</strong> transmitted to our servers, uploaded to any cloud service, or accessible to third parties.
+  </p>
+
+  <!-- ========== PERMISSIONS USED ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">🛡️ System Permissions &amp; Purpose</h4>
+  <p class="muted">The app requests only minimal Android permissions necessary for gameplay features:</p>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li><code>android.permission.VIBRATE</code> – Optional haptic feedback during piece snapping and button interactions. Can be toggled off in game settings.</li>
+    <li><strong>Photo / Media Access</strong> – User-initiated file picker for selecting a custom photo to turn into a jigsaw puzzle.</li>
+    <li><code>android.permission.INTERNET</code> – Required for loading advertisements via Google AdMob and standard Google Play Store services.</li>
+  </ul>
+
+  <!-- ========== ADVERTISING ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">📢 Advertising &amp; Third-Party Services</h4>
+  <p class="muted">
+    The app uses <strong>Google AdMob</strong> to display advertisements. Google AdMob may collect and process device identifiers, IP addresses, and advertising IDs in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener">AdMob Terms</a>.
+  </p>
+  <p class="muted" style="margin-top:0.5rem;">
+    Renchise Jigsaw Quest does not use any third-party behavioral tracking or analytics SDKs outside of standard AdMob ad delivery.
+  </p>
+
+  <!-- ========== DATA DELETION & USER RIGHTS ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">🗑️ Data Retention &amp; How to Delete Your Data</h4>
+  <p class="muted">
+    Since all data is stored locally on your device, you have complete control over your information at all times:
+  </p>
+  <ul class="checklist" style="margin-left:1.25rem;">
+    <li><strong>Delete Individual Custom Photos</strong> – Open the Jigsaw Gallery in the app, switch to the "Vault" tab, tap the trash bin icon on any custom photo, and confirm deletion.</li>
+    <li><strong>Delete All Game Data &amp; Photos</strong> – Open <strong>Android Settings → Apps → Renchise Jigsaw Quest → Storage &amp; Cache → Clear Storage</strong>. This permanently removes all local progress, coins, achievements, and custom photo puzzles.</li>
+    <li><strong>Uninstalling the App</strong> – Uninstalling the application automatically deletes all locally stored database files and custom photo puzzles.</li>
+  </ul>
+
+  <!-- ========== CHILDREN'S PRIVACY ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">👶 Children's Privacy</h4>
+  <p class="muted">
+    Renchise Jigsaw Quest is a general audience family-friendly puzzle game. The app does not knowingly collect personal identifiable information from children under the age of 13 (or applicable local age).
+  </p>
+
+  <!-- ========== CONTACT ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">✉️ Contact Us</h4>
+  <p class="muted">
+    If you have any questions or concerns regarding this Privacy Policy or data handling in Renchise Jigsaw Quest, please contact us at:<br />
+    <strong>Email:</strong> <a href="mailto:renchise.dev@gmail.com">renchise.dev@gmail.com</a>
+  </p>
+
+  <hr class="sep" style="margin:1.5rem 0;">
+  <p class="muted small" style="text-align:right;">
+    Effective Date: November 2026 (Version 1.0)
+  </p>
+</div>

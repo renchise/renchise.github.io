@@ -11,6 +11,8 @@
       {% assign active_class = " active" %}
     {% elsif link_path == "/vaultstudio/" and current_path == "/vaultstudio/index.html" %}
       {% assign active_class = " active" %}
+    {% elsif link_path == "/jigsawquest/" and current_path == "/jigsawquest/index.html" %}
+      {% assign active_class = " active" %}
     {% endif %}
     <a href="{{ site.baseurl }}{{ link.url }}" class="nav-tab{{ active_class }}">{{ link.label }}</a>
   {% endfor %}

@@ -1,0 +1,50 @@
+---
+layout: app-page
+app_key: jigsawquest
+title: "Renchise Jigsaw Quest - Security"
+page_title: "Security"
+category: "Security and data handling notes"
+
+quick_facts:
+  - value: "Policy"
+    label: "App-specific page"
+  - value: "Clear"
+    label: "Plain-language details"
+badges:
+  - text: "Independent app"
+    type: ""
+  - text: "Google AdMob"
+    type: "gold"
+notice: "This page contains the Security details for Renchise Jigsaw Quest."
+---
+
+<div class="panel">
+  <h3>Security</h3>
+  <p class="muted">How Renchise Jigsaw Quest protects your photos and game data</p>
+  <hr class="sep">
+
+  {% include app_disclaimer.html %}
+
+  <h4>1. 100% On‑device storage</h4>
+  <p>All game save files, unlocked companion codex entries, achievement progress, and custom photo puzzles are stored <strong>locally on your device</strong>. The app does not use remote cloud servers or backend databases for your content. Custom photo puzzles are stored strictly inside the app's internal private storage directory (<code>filesDir/saved_photos</code>).</p>
+
+  <h4>2. Android Application Sandbox</h4>
+  <p>Renchise Jigsaw Quest relies on Android's built-in application sandboxing architecture. Files stored within the app's private directory are isolated from other installed applications on your device, preventing unauthorized third-party access.</p>
+
+  <h4>3. Local Image Processing</h4>
+  <p>When creating a custom jigsaw puzzle, all image manipulation — including 90° rotation, scaling, pinch-to-zoom alignment, and 4:3 aspect ratio cropping — is executed strictly on-device using local Android Canvas and Bitmap APIs. No image data is sent to external cloud processing endpoints.</p>
+
+  <h4>4. Minimal Permission Surface</h4>
+  <p>The app only requests standard permissions strictly needed for gameplay: <code>VIBRATE</code> for haptic piece snapping, standard Photo Picker for custom image import, and <code>INTERNET</code> for Google AdMob advertising delivery. No elevated permissions (such as camera, contacts, or location) are requested.</p>
+
+  <h4>5. User Data Control &amp; Deletion</h4>
+  <p>You maintain full control over your data. Custom photo puzzles can be deleted individually from the Jigsaw Gallery at any time. Clearing the app's cache and storage in Android System Settings permanently wipes all local game progress and stored custom photo files.</p>
+
+  <h4>6. What we do <em>not</em> do</h4>
+  <ul>
+    <li>We do not upload, store, or transmit your photos or scans on any remote server.</li>
+    <li>We do not track your location, contacts, or browsing history.</li>
+    <li>We do not collect personal identify information, login credentials, or account data.</li>
+    <li>We do not run background telemetry or crash logging tools that harvest personal data.</li>
+  </ul>
+</div>
