@@ -10,10 +10,10 @@ quick_facts:
     label: "No registration needed"
   - value: "Local only"
     label: "Photos & data stay on device"
-  - value: "No cloud upload"
-    label: "Zero remote image storage"
-  - value: "AdMob"
-    label: "Google may collect device info"
+  - value: "Google Billing"
+    label: "Secure in-app purchases"
+  - value: "AdMob & AD_ID"
+    label: "Google ads & device ID"
 
 badges:
   - text: "Independent app"
@@ -26,46 +26,55 @@ notice: "This privacy policy is app‑specific and explains how Renchise Journey
 
 <div class="panel">
   <h3>Privacy Policy</h3>
-  <p class="muted">Last updated: November 2026 (Version 1.0)</p>
+  <p class="muted">Last updated: November 2026 (Version 1.23)</p>
   <hr class="sep">
 
   {% include app_disclaimer.html %}
 
   <p class="muted">
-    Your privacy is important to us. <strong>Renchise Journey Jigsaw</strong> (Package: <code>com.renchise.puzzle</code>) is an independent application designed with a privacy‑first approach. All core gameplay features, level progress, custom photo cropping, and companion codex data are processed and stored locally on your device.
+    Your privacy is important to us. <strong>Renchise Journey Jigsaw</strong> (Package: <code>com.renchise.puzzle</code>, Version 1.23) is an independent application designed with a privacy‑first approach. All core gameplay features, level progress, custom photo cropping, and companion codex data are processed and stored locally on your device.
   </p>
 
   <!-- ========== PERSONAL INFORMATION ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">🔒 Personal Information &amp; Data Collection</h4>
   <p class="muted">No account, registration, or login is required to use Renchise Journey Jigsaw. The application does <strong>NOT</strong>:</p>
   <ul class="checklist" style="margin-left:1.25rem;">
-    <li>Create user accounts or request email address, name, or phone number</li>
-    <li>Collect bank account, credit card, or financial details (all in-game coins are purely virtual)</li>
+    <li>Create user accounts or request email address, real name, or phone number</li>
+    <li>Collect bank account or credit card numbers directly (all financial transactions are handled securely by Google Play Billing)</li>
     <li>Track your GPS, fine location, or coarse location</li>
     <li>Sell, rent, or trade your personal information</li>
-    <li>Upload your custom photos or jigsaw puzzle progress to external servers</li>
+    <li>Upload your custom photos or jigsaw puzzle progress to external developer servers</li>
   </ul>
 
   <!-- ========== INFORMATION STORED LOCALLY ========== -->
-  <h4 style="margin:1.5rem 0 0.25rem 0;">📦 Information Stored Locally</h4>
-  <p class="muted">All game data is stored strictly on your device in a local SQLite database (Android Room) and private app storage:</p>
+  <h4 style="margin:1.5rem 0 0.25rem 0;">📦 Information Stored Locally (Room SQLite DB &amp; SharedPreferences)</h4>
+  <p class="muted">All game data is stored strictly on your device in a local SQLite database (Android Room, <code>jigsaw.db</code>) and private app storage:</p>
   <ul class="checklist" style="margin-left:1.25rem;">
-    <li>Level progress, stars earned, and best completion times per rank</li>
-    <li>Unlocked achievements (72 unique achievements)</li>
-    <li>Player profile nickname, avatar selection, and active companion character ID</li>
-    <li>Saved puzzle state (board slots, tray pieces, rotations) for auto-resuming unfinished games</li>
-    <li>Daily login streak count and last claim date</li>
-    <li>Custom photo library items (cropped bitmaps saved in private app storage: <code>filesDir/saved_photos</code>)</li>
-    <li>Application preferences (music/SFX volume, haptics, active board theme, contrast setting, font scale, language)</li>
+    <li><strong>LevelProgress</strong>: Level numbers, star ratings (1–3 stars), and best completion times in seconds</li>
+    <li><strong>AchievementRow</strong>: 72 unlockable achievement IDs and unlock timestamps</li>
+    <li><strong>Player</strong>: Virtual coin balances, best combo streaks, player nickname, avatar image path, active companion character ID, unlocked Journey characters, unlocked 81 Ordeals, and max custom photo slots</li>
+    <li><strong>SavedPuzzle</strong>: Current unfinished puzzle board slots, tray pieces, piece rotations, time spent, and game mode settings for auto-resuming games</li>
+    <li><strong>DailyStreak</strong>: Daily login streak counts and last claim dates</li>
+    <li><strong>Custom Photo Vault</strong>: Cropped photo bitmaps saved in private app storage (<code>filesDir/saved_photos</code>)</li>
+    <li><strong>SharedPreferences (`jigsaw_settings`)</strong>: Sound effect volume, music track/volume, haptic vibration toggle, active board theme, high-contrast slot preference, font size scale, and language selection</li>
   </ul>
 
   <!-- ========== CUSTOM PHOTO PRIVACY ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">🖼️ Custom Photo Privacy</h4>
   <p class="muted">
-    When you use the <strong>Add &amp; Edit New Photo</strong> feature, you select an image from your device via the standard Android photo picker. The selected photo is rotated, scaled, and cropped into a 4:3 ratio strictly on-device using local Android graphic APIs.
+    When you use the <strong>Add &amp; Edit New Photo</strong> feature, you select an image from your device via the standard Android photo picker. The selected photo is rotated, scaled, and cropped into a 4:3 ratio strictly on-device using local Android Canvas and Bitmap APIs.
   </p>
   <p class="muted" style="margin-top:0.5rem;">
     Your custom photos are saved exclusively to your device's local app storage. They are <strong>never</strong> transmitted to our servers, uploaded to any cloud service, or accessible to third parties.
+  </p>
+
+  <!-- ========== GOOGLE PLAY BILLING ========== -->
+  <h4 style="margin:1.5rem 0 0.25rem 0;">💳 In-App Purchases &amp; Google Play Billing</h4>
+  <p class="muted">
+    Renchise Journey Jigsaw integrates the official <strong>Google Play Billing Library</strong> (<code>billing-ktx</code>) to offer optional in-app purchases (such as virtual coin bundles, custom photo slot unlocks, or ad-removal upgrades).
+  </p>
+  <p class="muted" style="margin-top:0.5rem;">
+    All financial transactions are processed securely through Google Play's payment infrastructure. We do not receive, process, or store your credit card numbers, billing addresses, or payment credentials. All purchases are governed by <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play's Terms of Service</a>.
   </p>
 
   <!-- ========== PERMISSIONS USED ========== -->
@@ -73,27 +82,29 @@ notice: "This privacy policy is app‑specific and explains how Renchise Journey
   <p class="muted">The app requests only minimal Android permissions necessary for gameplay features:</p>
   <ul class="checklist" style="margin-left:1.25rem;">
     <li><code>android.permission.VIBRATE</code> – Optional haptic feedback during piece snapping and button interactions. Can be toggled off in game settings.</li>
+    <li><code>android.permission.INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code> – Required for loading advertisements via Google AdMob, verifying in-app purchases via Google Play Billing, and accessing Play Store services.</li>
+    <li><code>com.android.vending.BILLING</code> – Required for processing secure in-app purchases through Google Play.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code> – Used by Google AdMob to deliver relevant advertisements in accordance with Google Play policies.</li>
     <li><strong>Photo / Media Access</strong> – User-initiated file picker for selecting a custom photo to turn into a jigsaw puzzle.</li>
-    <li><code>android.permission.INTERNET</code> – Required for loading advertisements via Google AdMob and standard Google Play Store services.</li>
   </ul>
 
   <!-- ========== ADVERTISING ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">📢 Advertising &amp; Third-Party Services</h4>
   <p class="muted">
-    The app uses <strong>Google AdMob</strong> to display advertisements. Google AdMob may collect and process device identifiers, IP addresses, and advertising IDs in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener">AdMob Terms</a>.
+    The app uses <strong>Google AdMob</strong> (<code>play-services-ads</code>) to display advertisements. Google AdMob may collect and process device identifiers, advertising IDs (`AD_ID`), and IP addresses in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener">AdMob Terms</a>.
   </p>
   <p class="muted" style="margin-top:0.5rem;">
-    Renchise Journey Jigsaw does not use any third-party behavioral tracking or analytics SDKs outside of standard AdMob ad delivery.
+    Renchise Journey Jigsaw does not use any third-party behavioral tracking or analytics SDKs outside of standard AdMob ad delivery and Google Play services.
   </p>
 
   <!-- ========== DATA DELETION & USER RIGHTS ========== -->
   <h4 style="margin:1.5rem 0 0.25rem 0;">🗑️ Data Retention &amp; How to Delete Your Data</h4>
   <p class="muted">
-    Since all data is stored locally on your device, you have complete control over your information at all times:
+    Since all game data is stored locally on your device, you have complete control over your information at all times:
   </p>
   <ul class="checklist" style="margin-left:1.25rem;">
     <li><strong>Delete Individual Custom Photos</strong> – Open the Jigsaw Gallery in the app, switch to the "Vault" tab, tap the trash bin icon on any custom photo, and confirm deletion.</li>
-    <li><strong>Delete All Game Data &amp; Photos</strong> – Open <strong>Android Settings → Apps → Renchise Journey Jigsaw → Storage &amp; Cache → Clear Storage</strong>. This permanently removes all local progress, coins, achievements, and custom photo puzzles.</li>
+    <li><strong>Delete All Game Data &amp; Photos</strong> – Open <strong>Android Settings → Apps → Renchise Journey Jigsaw → Storage &amp; Cache → Clear Storage</strong>. This permanently removes all local Room database records, coins, achievements, and custom photo puzzles.</li>
     <li><strong>Uninstalling the App</strong> – Uninstalling the application automatically deletes all locally stored database files and custom photo puzzles.</li>
   </ul>
 
@@ -112,6 +123,6 @@ notice: "This privacy policy is app‑specific and explains how Renchise Journey
 
   <hr class="sep" style="margin:1.5rem 0;">
   <p class="muted small" style="text-align:right;">
-    Effective Date: November 2026 (Version 1.0)
+    Effective Date: November 2026 (Version 1.23)
   </p>
 </div>
